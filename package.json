@@ -2,7 +2,7 @@
   "name": "2017.texascamp.org",
   "version": "0.3.0",
   "description": "2017 TexasCamp",
-  "main": "texascamp-react/index.jsx",
+  "main": "src/index.jsx",
   "repository": "git@github.com:TexasCamp/2017.texascamp.org-react.git",
   "author": "ADUG",
   "contributors": [
@@ -25,7 +25,7 @@
     "build": "NODE_ENV=production webpack -p",
     "start": "webpack-dev-server",
     "start-debug": "webpack --display-error-details",
-    "lint-code": "eslint ./web/themes/texascamp-react/",
+    "lint-code": "eslint src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "precommit": "npm run lint-code"

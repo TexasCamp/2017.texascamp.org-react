@@ -6,7 +6,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const NODE_ENV = process.env.NODE_ENV ? process.env.NODE_ENV.toLowerCase() : 'development';
-const THEME_DIR = 'texascamp-react/';
+const THEME_DIR = 'src/';
 
 // Plugins
 const plugins = [];
