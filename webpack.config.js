@@ -45,7 +45,7 @@ const loaders = [
     loaders: ['json', 'yaml'],
   },
   {
-    test: /\.jsx$/,
+    test: /\.js|.jsx$/,
     exclude: /node_modules/,
     loader: 'babel',
     query:
