@@ -2,8 +2,8 @@ import React from 'react';
 
 function Tickets() {
   return (
-    <div id="Tickets">
-      Tickets
+    <div id="tickets">
+      <h1>WHILE THE GETTIN'S GOOD</h1>
     </div>
   );
 }

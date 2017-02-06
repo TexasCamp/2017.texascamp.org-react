@@ -2,8 +2,8 @@ import React from 'react';
 
 function Sponsors() {
   return (
-    <div id="Sponsors">
-      Sponsors
+    <div id="sponsors">
+      <h1>SPONSORS</h1>
     </div>
   );
 }

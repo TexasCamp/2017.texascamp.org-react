@@ -2,8 +2,8 @@ import React from 'react';
 
 function Sessions() {
   return (
-    <div id="Sessions">
-      Sessions
+    <div id="sessions">
+      <h1>STEP RIGHT UP</h1>
     </div>
   );
 }
