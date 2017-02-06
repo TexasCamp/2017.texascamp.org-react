@@ -8,11 +8,17 @@ import Footer from '../Footer';
 function App() {
   return (
     <div id="app">
-      <Header />
-      <Menu />
-      <Frame />
-      <Social />
-      <Footer />
+      <section id="top">
+        <Header />
+        <Menu />
+      </section>
+      <section id="middle">
+        <Frame />
+      </section>
+      <section id="bottom">
+        <Social />
+        <Footer />
+      </section>
     </div>
   );
 }

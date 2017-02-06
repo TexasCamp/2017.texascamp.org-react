@@ -2,7 +2,7 @@ import React from 'react';
 
 function Menu() {
   return (
-    <div id="Menu">
+    <div id="menu">
       Menu
     </div>
   );

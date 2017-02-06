@@ -8,7 +8,7 @@ import News from './News';
 
 function Frame() {
   return (
-    <div id="Frame">
+    <div id="frame">
       <About />
       <Tickets />
       <Sessions />

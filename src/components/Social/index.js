@@ -2,7 +2,7 @@ import React from 'react';
 
 function Social() {
   return (
-    <div id="Social">
+    <div id="social">
       Twitter | Facebook | Code of Conduct
     </div>
   );

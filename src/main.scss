@@ -1,0 +1,43 @@
+@import "~breakpoint-sass/stylesheets/breakpoint";
+@import "~singularitygs/stylesheets/singularitygs";
+@import "~sass-toolkit/stylesheets/toolkit/kickstart";
+@import "~compass-mixins/lib/compass/css3";
+
+
+// Colors:
+// Neutrals
+
+
+// Accents
+
+
+// Typefaces:
+
+
+// Font Size:
+$font-large: x-large;
+$font-medium: medium;
+$font-small: x-small;
+
+
+// Setup Breakpoints
+$bp-handheld-only: max-width    679px;
+$bp-narrow:        min-width    680px;
+$bp-medium:        min-width    980px;
+$bp-wide:          min-width   1080px;
+$bp-portrait:      orientation portrait;
+
+/* Set up basic colors and typefaces */
+body {
+  background: #ede6e0;
+  line-height: 1.5;
+}
+
+@import "./helpers.scss";
+
+@import "./components/App/app.scss";
+@import "./components/Menu/menu.scss";
+@import "./components/Header/header.scss";
+@import "./components/Frame/frame.scss";
+@import "./components/Social/social.scss";
+@import "./components/Footer/footer.scss";
