@@ -5,14 +5,19 @@
 
 
 // Colors:
-// Neutrals
-
-
-// Accents
-
+$c-dust-light: #ece5df;
+$c-dust: #e2dcd6;
+$c-red: #ef5a47;
+$c-yellow: #ebc387;
+$c-blue: #006c87;
+$c-blue-dark: #10363f;
+$c-black: #161615;
 
 // Typefaces:
-
+$f-base: "calder-lc", sans-serif;
+$f-heading: "calder-dark", sans-serif;
+$f-outline: "calder-dark-outline", sans-serif;
+$f-script: "calder-script", sans-serif;
 
 // Font Size:
 $font-large: x-large;
@@ -29,7 +34,7 @@ $bp-portrait:      orientation portrait;
 
 /* Set up basic colors and typefaces */
 body {
-  background: #ede6e0;
+  background: $c-dust;
   line-height: 1.5;
 }
 
