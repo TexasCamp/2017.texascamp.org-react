@@ -1,10 +1,24 @@
 import React from 'react';
+import background from './finish-bg.jpg';
 
 function Finish() {
   return (
     <div id="finish">
-      <h1>FINISH</h1>
+      <Background />
+      <Text />
     </div>
+  );
+}
+
+function Background() {
+  return (
+    <img src={background} alt="texas camp finish background" />
+  );
+}
+
+function Text() {
+  return (
+    <h2>You may all go to hell,<br />and I will go to Texas.<br />- David Crockett</h2>
   );
 }
 
