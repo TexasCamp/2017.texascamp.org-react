@@ -1,4 +1,9 @@
 #social {
   float: left;
   font-size: $font-small;
+
+  img {
+    height: 1em;
+    width: 1em;
+  }
 }
