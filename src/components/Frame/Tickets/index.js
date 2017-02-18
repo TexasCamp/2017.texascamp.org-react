@@ -1,10 +1,20 @@
 import React from 'react';
+import Skeleton from '../Skeleton';
+import background from './tickets-bg.jpg';
+import ticket from './ticket.png';
 
 function Tickets() {
   return (
-    <div id="tickets">
-      <h1>WHILE THE GETTIN'S GOOD</h1>
-    </div>
+    <Skeleton
+      class="tickets"
+      backgroundSrc={background}
+      backgroundAlt="texas camp tickets background"
+      title="WHILE THE GETTIN'S GOOD"
+      body="Blah blah blah needs words."
+      rightElement={
+        <img src={ticket} alt="register ticket" />
+      }
+    />
   );
 }
 
