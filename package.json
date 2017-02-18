@@ -3,7 +3,10 @@
   "version": "0.3.0",
   "description": "2017 TexasCamp",
   "main": "src/index.jsx",
-  "repository": "git@github.com:TexasCamp/2017.texascamp.org-react.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TexasCamp/2017.texascamp.org.git"
+  },
   "author": "ADUG",
   "contributors": [
     {
@@ -36,10 +39,6 @@
       "./test/helpers/dom.js"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TexasCamp/2017.texascamp.org.git"
-  },
   "domains": [
     "http://2017.texascamp.org/"
   ],
@@ -51,6 +50,7 @@
     "file-loader": "^0.9.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-google-maps": "^6.0.1",
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
