@@ -1,9 +1,10 @@
 #frame {
   background-color: #e3dcd6;
-  max-height: 80vh;
+  width: 100%;
+  height: 46vw;
   overflow: scroll;
-}
 
-#frame::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
