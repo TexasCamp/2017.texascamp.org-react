@@ -1,0 +1,20 @@
+.skeleton {
+  position: relative;
+
+  .left {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    width: 40%;
+    text-align: left;
+
+    h2 {
+      font-size: 30px;
+      color: $c-blue;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
