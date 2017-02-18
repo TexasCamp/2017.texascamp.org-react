@@ -1,12 +1,19 @@
 import React from 'react';
+import Skeleton from '../Skeleton';
+import background from './news-bg.jpg';
 
 function News() {
   return (
-    <div id="news">
-      <h5>THE LATEST</h5>
-      <h1>SUBMISSION DEADLINE FAST APPROACHING</h1>
-      <p>Submit a session</p>
-    </div>
+    <Skeleton
+      class="news"
+      backgroundSrc={background}
+      backgroundAlt="texas camp news background"
+      title="SUBMISSION DEADLINE FAST APPROACHING"
+      body="Submit a session"
+      rightElement={
+        <img src="/" alt="signup for news" />
+      }
+    />
   );
 }
 
