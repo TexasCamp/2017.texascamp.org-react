@@ -1,10 +1,19 @@
 import React from 'react';
+import Skeleton from '../Skeleton';
+import background from './sponsors-bg.jpg';
 
 function Sponsors() {
   return (
-    <div id="sponsors">
-      <h1>SPONSORS</h1>
-    </div>
+    <Skeleton
+      class="sponsors"
+      backgroundSrc={background}
+      backgroundAlt="texas camp sessions background"
+      title=""
+      body=""
+      rightElement={
+        <div id="sponsors"></div>
+      }
+    />
   );
 }
 
