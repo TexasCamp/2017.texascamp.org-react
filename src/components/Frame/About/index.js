@@ -5,6 +5,7 @@ import background from './about-bg.jpg';
 function About() {
   return (
     <Skeleton
+      class="about"
       backgroundSrc={background}
       backgroundAlt="texas camp about background"
       title="THREE DAYS IN A TWO STEP TOWN"

@@ -1,6 +1,10 @@
 .skeleton {
   position: relative;
 
+  img {
+    opacity: 0.2;
+  }
+
   .left {
     position: absolute;
     top: 13%;
@@ -16,5 +20,12 @@
     p {
       font-size: 13px;
     }
+  }
+
+  .right {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 40%;
   }
 }
