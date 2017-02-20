@@ -12,7 +12,7 @@ function Social() {
 
 function Twitter() {
   return (
-    <a href="/">
+    <a href="https://twitter.com/drupaltexascamp" target="_blank">
       <img src={twitter} alt="twitter" />
     </a>
   );
