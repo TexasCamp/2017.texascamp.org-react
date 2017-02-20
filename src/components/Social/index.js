@@ -20,7 +20,7 @@ function Twitter() {
 
 function Facebook() {
   return (
-    <a href="/">
+    <a href="https://www.facebook.com/DrupalCampTexas/" target="_blank">
       <img src={facebook} alt="facebook" />
     </a>
   );
