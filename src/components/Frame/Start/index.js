@@ -5,11 +5,16 @@ import logoOutline from './logo-outline.svg';
 
 function Start() {
   return (
-    <div id="start">
-      <Background />
-      <Text />
-      <Logo />
-      <LogoOutline />
+    <div id="start" >
+      <div className="parallax__layer--child">
+
+        <Background />
+        <Text />
+        <Logo />
+        <LogoOutline />
+
+      </div>
+      <ParallaxBackground />
     </div>
   );
 }
@@ -38,6 +43,14 @@ function LogoOutline() {
   return (
     <div id="logo-outline">
       <img src={logoOutline} alt="texas camp logo outline" />
+    </div>
+  );
+}
+
+function ParallaxBackground() {
+  return (
+    <div className="parallax__layer--base">
+      <img src={background} alt="texas camp background" />
     </div>
   );
 }

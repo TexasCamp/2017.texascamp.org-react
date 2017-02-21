@@ -8,3 +8,29 @@
     display: none;
   }
 }
+
+
+.parallax{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  perspective-origin: 0 0;
+
+}
+
+
+.parallax__layer--child {
+  transform-origin: 0 0;
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax__layer--base {
+  height: 400px;
+
+}
+
+.test {
+
+}
