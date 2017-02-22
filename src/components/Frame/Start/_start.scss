@@ -1,5 +1,6 @@
-#start {
+.start  {
   position: relative;
+  //height: 46vw;
 
   h1 {
     position: absolute;
@@ -8,6 +9,10 @@
     width: 100%;
     text-align: center;
     font-size: 16px;
+  }
+  
+  img {
+    display: block;
   }
 
   #logo {
@@ -26,3 +31,5 @@
     text-align: center;
   }
 }
+
+

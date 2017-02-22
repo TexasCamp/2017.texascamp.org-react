@@ -10,7 +10,7 @@ import Finish from './Finish';
 
 function Frame() {
   return (
-    <div id="frame">
+    <div id="frame" className="parallax">
       <Start />
       <About />
       <Tickets />

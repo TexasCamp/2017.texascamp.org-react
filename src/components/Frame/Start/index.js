@@ -2,14 +2,28 @@ import React from 'react';
 import background from './start-bg.jpg';
 import logo from './logo.svg';
 import logoOutline from './logo-outline.svg';
+import backgroundParallax from '../snow.jpg';
 
 function Start() {
   return (
-    <div id="start">
-      <Background />
-      <Text />
-      <Logo />
-      <LogoOutline />
+    <div id="start" >
+      <div className="start">
+
+        <div className="parallax__group">
+          <div className="parallax__layer--base">
+            <Background />
+            <Text />
+            <Logo />
+            <LogoOutline />
+          </div>
+
+          <div className="parallax__layer--back">
+            <ParallaxBackground />
+          </div>
+        </div>
+
+      </div>
+
     </div>
   );
 }
@@ -39,6 +53,12 @@ function LogoOutline() {
     <div id="logo-outline">
       <img src={logoOutline} alt="texas camp logo outline" />
     </div>
+  );
+}
+
+function ParallaxBackground() {
+  return (
+    <img src={backgroundParallax} alt="texas camp parallax background" />
   );
 }
 

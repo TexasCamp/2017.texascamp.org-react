@@ -1,10 +1,46 @@
 #frame {
-  background-color: #e3dcd6;
+
   width: 100%;
   height: 46vw;
-  overflow: scroll;
+  //overflow: scroll;
 
   &::-webkit-scrollbar{
     display: none;
   }
+}
+
+
+.parallax{
+  perspective: 1px;
+  perspective-origin: 0 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+//  position: relative;
+
+}
+
+
+.parallax__group {
+  position: relative;
+  width: 100%;
+  height: 60vw;
+  transform-style: preserve-3d;
+
+  img{
+    //display: block;
+  }
+}
+.parallax__layer--base {
+  height: 46vw;
+  transform: translateZ(0);
+  background-color: #e3dcd6;
+  overflow: hidden;
+}
+
+.parallax__layer--back {
+  position: relative;
+  top: 100vw;
+  left: 285vw;
+  transform: translateZ(-6px) scale(7);
 }
