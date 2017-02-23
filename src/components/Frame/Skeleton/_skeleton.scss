@@ -1,33 +1,50 @@
 .skeleton {
   position: relative;
+  z-index: 1;
   width: 100%;
   height: 46vw;
+  overflow: hidden;
 
-  img {
-    opacity: 0.2;
+  h2 {
+    font-size: 30px;
+    color: $c-blue;
+  }
+
+  p {
+    font-size: 13px;
   }
 
   .left {
-    position: absolute;
-    top: 13%;
-    left: 7%;
-    width: 40%;
-    text-align: left;
-
-    h2 {
-      font-size: 30px;
-      color: $c-blue;
-    }
-
-    p {
-      font-size: 13px;
-    }
+    @include grid-span(5,2);
+    position: relative;
+    z-index: 10;
+    margin-top: 10vh;
   }
 
   .right {
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    width: 40%;
+    @include grid-span(5,8);
+    position: relative;
+    z-index: 10;
+    height: 100%;
+
+    .image-wrapper {
+      height: 80%;
+      margin-top: 10%;
+
+      img {
+        display: block;
+        margin: auto;
+        height: 100%;
+      }
+
+    }
+
   }
+
+  .background-image{
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+  }
+  
 }

@@ -1,10 +1,26 @@
 #frame {
+
+  // Setup Grid
+  // Define the 12 column grid with 1/3 gutters:
+  @include add-grid(12);
+  @include add-gutter(1/3);
+  @include background-grid(pink);
+
+  h1 {
+    font: $f-heading;
+  }
+
   background-color: #e3dcd6;
   width: 100%;
-  height: 46vw;
-  overflow: scroll;
 
   &::-webkit-scrollbar{
     display: none;
+  }
+}
+
+@media screen and (min-width: 500px){
+  #frame{
+    overflow: scroll;
+    height: 46vw;
   }
 }

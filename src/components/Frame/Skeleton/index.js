@@ -11,7 +11,9 @@ class Skeleton extends React.Component {
   render() {
     return (
       <div className={this.state.class}>
-        <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
+        <div className="background-image">
+          <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
+        </div>
 
         <div className="left">
           <h2>{this.props.title}</h2>
@@ -19,7 +21,9 @@ class Skeleton extends React.Component {
         </div>
 
         <div className="right">
-          {this.props.rightElement}
+          <div className="image-wrapper">
+            {this.props.rightElement}
+          </div>
         </div>
       </div>
     );
