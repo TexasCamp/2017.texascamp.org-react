@@ -1,4 +1,10 @@
 #social {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
   float: left;
   font-size: $font-small;
 

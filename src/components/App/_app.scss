@@ -1,11 +1,10 @@
 #app {
-  margin-left: 2vw;
-  margin-right: 2vw;
 }
 
 #top {
   @extend .clearfix;
-  margin: .5em 0;
+  margin: 0 2vw;
+  height: 7vh;
 }
 
 #middle {
@@ -14,5 +13,27 @@
 
 #bottom {
   @extend .clearfix;
-  margin: .5em 0;
+  margin: 0 2vw;
+  height: 7vh;
+}
+
+@media screen and (min-width: 700px) {
+  #app {
+    margin: 0 7vh;
+  }
+
+  #top {
+    margin: 0;
+    height: 7vh;
+  }
+
+  #middle {
+    height: 86vh;
+  }
+
+  #bottom {
+    margin: 0;
+    height: 7vh;
+  }
+
 }

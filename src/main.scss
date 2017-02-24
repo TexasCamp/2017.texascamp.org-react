@@ -36,6 +36,7 @@ $bp-portrait:      orientation portrait;
 body {
   background: $c-dust-light;
   line-height: 1.5;
+  margin: 0;
 }
 
 @import "./helpers.scss";
