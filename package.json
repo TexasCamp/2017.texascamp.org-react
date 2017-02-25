@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --host 0.0.0.0 --port 8080",
     "start-debug": "webpack --display-error-details",
     "lint-code": "eslint src",
     "storybook": "start-storybook -p 6006",
