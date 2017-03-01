@@ -97,3 +97,19 @@
   width: auto;
   -ms-interpolation-mode: bicubic;
 }
+
+@mixin button($bg: $c-red, $padding: 8px 20px) {
+  background-color: $bg;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  color: $c-white;
+  font-family: $f-heavy;
+  font-size: $font-medium;
+  font-style: normal;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}

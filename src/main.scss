@@ -12,10 +12,12 @@ $c-yellow: #ebc387;
 $c-blue: #006c87;
 $c-blue-dark: #10363f;
 $c-black: #161615;
+$c-white: #ffffff;
 
 // Typefaces:
 $f-base: "calder-lc", sans-serif;
-$f-heading: "calder-dark", sans-serif;
+$f-heavy: "calder-dark", sans-serif;
+$f-heading: $f-heavy;
 $f-outline: "calder-dark-outline", sans-serif;
 $f-script: "calder-script", sans-serif;
 
@@ -42,6 +44,7 @@ body {
 @import "./helpers.scss";
 
 @import "./components/App/app.scss";
+@import "./components/Button/button.scss";
 @import "./components/Frame/Skeleton/skeleton.scss";
 @import "./components/Menu/menu.scss";
 @import "./components/Header/header.scss";
