@@ -5,7 +5,7 @@
 node_modules
 
 # Project configuration
-dist/
+build
 
 # Other
 .DS_Store

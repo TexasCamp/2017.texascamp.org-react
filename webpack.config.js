@@ -18,10 +18,10 @@ plugins.push(new HtmlWebpackPlugin({
 }));
 
 if (NODE_ENV === 'production') {
-  plugins.push(new FaviconsWebpackPlugin({
-    logo: THEME_DIR + 'public/favicon.ico',
-    inject: true,
-  }));
+  // plugins.push(new FaviconsWebpackPlugin({
+  //   logo: THEME_DIR + 'public/favicon.ico',
+  //   inject: true,
+  // }));
   plugins.push(new optimize.DedupePlugin());
   plugins.push(new DefinePlugin({
     'process.env': {
@@ -74,7 +74,7 @@ if (NODE_ENV === 'production') {
 module.exports = {
   entry: "./" + THEME_DIR + 'index.jsx',
   output: {
-    path: `${__dirname}` + THEME_DIR + '/dist',
+    path: `${__dirname}` + '/build',
     filename: 'texascamp.[hash].js',
   },
   module: {
