@@ -41,7 +41,7 @@
 }
 
 .skeleton__title {
-  @include heading;
+  @include text-heading;
 }
 
 .skeleton__body {

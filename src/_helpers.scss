@@ -106,7 +106,7 @@
   display: inline-block;
   color: $c-white;
   font-family: $f-heavy;
-  font-size: $font-medium;
+  font-size: $base-font-size;
   font-style: normal;
   padding: $padding;
   text-align: center;
@@ -114,7 +114,7 @@
   text-transform: uppercase;
 }
 
-@mixin heading {
+@mixin text-heading {
   color: $c-blue-dark;
   font-family: $f-heading;
   font-size: 1.5rem;
@@ -127,4 +127,9 @@
   @media ($bp-wide) {
     font-size: 3.75rem;
   }
+}
+
+@mixin text-small($font-size: 0.75rem) {
+  font-size: $font-size;
+  line-height: 1.5;
 }
