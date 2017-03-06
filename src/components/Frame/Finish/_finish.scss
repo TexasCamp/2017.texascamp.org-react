@@ -1,12 +1,23 @@
 #finish {
   position: relative;
+}
 
-  h2 {
-    position: absolute;
-    top: 21%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
+.finish__quote {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 21%;
+  width: 100%;
+}
+
+.finish__quote-text {
+  @include text-small($font-size: 0.8rem);
+  margin-bottom: 1em;
+}
+
+.finish__quote-author {
+  font-family: $f-script;
+  &::before {
+    content: '-';
   }
 }
