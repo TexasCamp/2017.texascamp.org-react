@@ -130,6 +130,7 @@
 }
 
 @mixin text-small($font-size: 0.75rem) {
+  font-family: $f-base;
   font-size: $font-size;
   line-height: 1.5;
 }
