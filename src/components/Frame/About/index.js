@@ -8,7 +8,7 @@ function About() {
       class="about"
       backgroundSrc={background}
       backgroundAlt="texas camp about background"
-      title="THREE DAYS IN A TWO STEP TOWN"
+      title="Three days in a two step town"
       body="Texas Camp is a Drupal Conference for the people, an annual celebration
       of open-source software in the Lone Star State.  Join us the June 2-4 for
       three days of talks, trainings, summits, sprints and socials with some of

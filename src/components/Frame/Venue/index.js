@@ -8,7 +8,7 @@ function Venue() {
         class="venue"
         backgroundSrc="/"
         backgroundAlt="texas camp venue background"
-        title="IN A PICKLE"
+        title="In a pickle"
         body="How to get to TexasCamp 2017"
         rightElement={
           <div></div>

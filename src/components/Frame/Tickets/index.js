@@ -9,7 +9,7 @@ function Tickets() {
       class="tickets"
       backgroundSrc={background}
       backgroundAlt="texas camp tickets background"
-      title="WHILE THE GETTIN'S GOOD"
+      title="While the gettin's good"
       body="Blah blah blah needs words."
       rightElement={
         <img src={ticket} alt="register ticket" />

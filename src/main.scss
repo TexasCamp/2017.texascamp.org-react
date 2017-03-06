@@ -4,7 +4,7 @@
 @import "~compass-mixins/lib/compass/css3";
 
 
-// Colors:
+// Colors
 $c-dust-light: #ece5df;
 $c-dust: #e2dcd6;
 $c-red: #ef5a47;
@@ -14,33 +14,38 @@ $c-blue-dark: #10363f;
 $c-black: #161615;
 $c-white: #ffffff;
 
-// Typefaces:
+// Typefaces
 $f-base: "calder-lc", sans-serif;
 $f-heavy: "calder-dark", sans-serif;
 $f-heading: $f-heavy;
 $f-outline: "calder-dark-outline", sans-serif;
 $f-script: "calder-script", sans-serif;
 
-// Font Size:
-$font-large: x-large;
-$font-medium: medium;
-$font-small: x-small;
+// Font Size
+$base-font-size: 16px;
 
 
 // Setup Breakpoints
-$bp-handheld-only: max-width    679px;
-$bp-narrow:        min-width    680px;
-$bp-medium:        min-width    980px;
-$bp-wide:          min-width   1080px;
+$bp-handheld-only: 'max-width:  679px';
+$bp-narrow:        'min-width:  680px';
+$bp-medium:        'min-width:  980px';
+$bp-wide:          'min-width:  1080px';
 $bp-portrait:      orientation portrait;
 
-/* Set up basic colors and typefaces */
+// Set up basic colors and typefaces
+html {
+  font-size: $base-font-size;
+}
+
 body {
   background: $c-dust-light;
+  font-family: $f-base;
   line-height: 1.5;
   margin: 0;
 }
 
+// Import partials
+@import "./reset.scss";
 @import "./helpers.scss";
 
 @import "./components/App/app.scss";
