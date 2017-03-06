@@ -113,3 +113,18 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@mixin heading {
+  color: $c-blue-dark;
+  font-family: $f-heading;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  @media ($bp-narrow) {
+    font-size: 2.5rem;
+  }
+  @media ($bp-wide) {
+    font-size: 3.75rem;
+  }
+}

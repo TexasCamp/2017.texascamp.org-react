@@ -16,8 +16,8 @@ class Skeleton extends React.Component {
         </div>
 
         <div className="left">
-          <h2>{this.props.title}</h2>
-          <p>{this.props.body}</p>
+          <h2 className="skeleton__title">{this.props.title}</h2>
+          <p className="skeleton__body">{this.props.body}</p>
         </div>
 
         <div className="right">

@@ -8,7 +8,7 @@ function News() {
       class="news"
       backgroundSrc={background}
       backgroundAlt="texas camp news background"
-      title="SUBMISSION DEADLINE FAST APPROACHING"
+      title="Submission deadline fast approaching"
       body="Submit a session"
       rightElement={
         <img src="/" alt="signup for news" />
