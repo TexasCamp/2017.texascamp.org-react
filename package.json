@@ -3,7 +3,10 @@
   "version": "0.3.0",
   "description": "2017 TexasCamp",
   "main": "src/index.jsx",
-  "repository": "git@github.com:TexasCamp/2017.texascamp.org-react.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TexasCamp/2017.texascamp.org.git"
+  },
   "author": "ADUG",
   "contributors": [
     {
@@ -25,6 +28,7 @@
     "build": "NODE_ENV=production webpack -p",
     "start": "webpack-dev-server --host 0.0.0.0 --port 8080",
     "start-debug": "webpack --display-error-details",
+    "host": "NODE_ENV=production PORT=8080 node server",
     "lint-code": "eslint src",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -36,10 +40,6 @@
       "./test/helpers/dom.js"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/TexasCamp/2017.texascamp.org.git"
-  },
   "domains": [
     "http://2017.texascamp.org/"
   ],
@@ -48,6 +48,7 @@
     "classnames": "^2.2.5",
     "compass-mixins": "^0.12.10",
     "enzyme": "^2.6.0",
+    "express": "^4.15.2",
     "file-loader": "^0.9.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
