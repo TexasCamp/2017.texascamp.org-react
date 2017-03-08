@@ -10,7 +10,7 @@ class Skeleton extends React.Component {
 
   render() {
     return (
-      <div className={this.state.class}>
+      <div id={this.props.class} className={this.state.class}>
         <div className="background-image">
           <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
         </div>
