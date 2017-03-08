@@ -4,9 +4,9 @@ function Menu() {
   return (
     <nav id="menu">
       <ul>
-        <li>
+        { /* <li>
           <a href="/#start">Start</a>
-        </li>
+        </li> */ }
         <li>
           <a href="/#about">About</a>
         </li>
@@ -25,9 +25,9 @@ function Menu() {
         <li>
           <a href="/#news">News</a>
         </li>
-        <li>
+        { /* <li>
           <a href="/#finish">Finish</a>
-        </li>
+        </li> */ }
       </ul>
     </nav>
   );
