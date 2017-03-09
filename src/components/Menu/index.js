@@ -3,14 +3,6 @@ import { Link, Element, Events, scroll, scrollSpy } from 'react-scroll';
 
 class Menu extends React.Component {
   componentDidMount() {
-    Events.scrollEvent.register('begin', function (to, element) {
-      console.log('begin', to, element);
-    });
-
-    Events.scrollEvent.register('end', function (to, element) {
-      console.log('end', to, element);
-    });
-
     scrollSpy.update();
   }
 
@@ -31,8 +23,7 @@ class Menu extends React.Component {
   scrollMore() {
     scroll.scrollMore(100);
   }
-  handleSetActive(to) {
-    console.log(to);
+  handleSetActive() {
   }
   render() {
     return (
