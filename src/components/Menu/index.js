@@ -1,59 +1,61 @@
-var React   = require('react');
-var Scroll  = require('react-scroll');
+import React from 'react';
+import { Link, Element, Events, scroll, scrollSpy } from 'react-scroll';
 
-var Link       = Scroll.Link;
-var Element    = Scroll.Element;
-var Events     = Scroll.Events;
-var scroll     = Scroll.animateScroll;
-var scrollSpy  = Scroll.scrollSpy;
-
-
-var Menu = React.createClass({
-  componentDidMount: function() {
-
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
+class Menu extends React.Component {
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log('begin', to, element);
     });
 
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log("end", arguments);
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log('end', to, element);
     });
 
     scrollSpy.update();
+  }
 
-  },
-  componentWillUnmount: function() {
+  componentWillUnmount() {
     Events.scrollEvent.remove('begin');
     Events.scrollEvent.remove('end');
-  },
-  scrollToTop: function() {
-    scroll.scrollToTop();
-  },
-  scrollToBottom: function() {
-    scroll.scrollToBottom();
-  },
-  scrollTo: function() {
-    scroll.scrollTo(100);
-  },
-  scrollMore: function() {
-    scroll.scrollMore(100);
-  },
-  handleSetActive: function(to) {
-    console.log(to);
-  },
-  render: function () {
-    return (
-        <div>
-          <Link className="test" activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-            Test 1
-          </Link>
+  }
 
-          <Element name="test1" className="element">
-            test 1
-          </Element>
-        </div>
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  scrollToBottom() {
+    scroll.scrollToBottom();
+  }
+  scrollTo() {
+    scroll.scrollTo(100);
+  }
+  scrollMore() {
+    scroll.scrollMore(100);
+  }
+  handleSetActive(to) {
+    console.log(to);
+  }
+  render() {
+    return (
+      <div>
+        <Link
+          className="test"
+          activeClass="active"
+          to="test1"
+          spy
+          smooth
+          offset={50}
+          duration={500}
+          onSetActive={this.handleSetActive}
+        >
+          Test 1
+        </Link>
+
+        <Element name="test1" className="element">
+          test 1
+        </Element>
+      </div>
     );
   }
-});
+}
 
 export default Menu;
