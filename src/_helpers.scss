@@ -97,3 +97,40 @@
   width: auto;
   -ms-interpolation-mode: bicubic;
 }
+
+@mixin button($bg: $c-red, $padding: 8px 20px) {
+  background-color: $bg;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  color: $c-white;
+  font-family: $f-heavy;
+  font-size: $base-font-size;
+  font-style: normal;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin text-heading {
+  color: $c-blue-dark;
+  font-family: $f-heading;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+  @media ($bp-narrow) {
+    font-size: 2.5rem;
+  }
+  @media ($bp-wide) {
+    font-size: 3.75rem;
+  }
+}
+
+@mixin text-small($font-size: 0.75rem) {
+  font-family: $f-base;
+  font-size: $font-size;
+  line-height: 1.5;
+}

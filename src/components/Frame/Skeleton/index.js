@@ -5,21 +5,25 @@ class Skeleton extends React.Component {
     super(props);
 
     const skeletonClass = `skeleton ${this.props.class}`;
-    this.state = { class: skeletonClass };
+    this.state = { name: this.props.class, class: skeletonClass };
   }
 
   render() {
     return (
-      <div className={this.state.class}>
-        <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
+      <div name={this.state.name} id={this.state.name} className={this.state.class}>
+        <div className="background-image">
+          <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
+        </div>
 
         <div className="left">
-          <h2>{this.props.title}</h2>
-          <p>{this.props.body}</p>
+          <h2 className="skeleton__title">{this.props.title}</h2>
+          <p className="skeleton__body">{this.props.body}</p>
         </div>
 
         <div className="right">
-          {this.props.rightElement}
+          <div className="image-wrapper">
+            {this.props.rightElement}
+          </div>
         </div>
       </div>
     );

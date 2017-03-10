@@ -9,7 +9,7 @@ function Sessions() {
       class="sessions"
       backgroundSrc={background}
       backgroundAlt="texas camp sessions background"
-      title="STEP RIGHT UP"
+      title="Step right up"
       body="Blah blah blah needs words."
       rightElement={
         <img src={wanted} alt="submit a session" />

@@ -1,8 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { DefinePlugin, optimize } = require('webpack');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+// const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
+// const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const NODE_ENV = process.env.NODE_ENV ? process.env.NODE_ENV.toLowerCase() : 'development';
@@ -18,10 +18,10 @@ plugins.push(new HtmlWebpackPlugin({
 }));
 
 if (NODE_ENV === 'production') {
-  plugins.push(new FaviconsWebpackPlugin({
-    logo: THEME_DIR + 'public/favicon.ico',
-    inject: true,
-  }));
+  // plugins.push(new FaviconsWebpackPlugin({
+  //   logo: THEME_DIR + 'public/favicon.ico',
+  //   inject: true,
+  // }));
   plugins.push(new optimize.DedupePlugin());
   plugins.push(new DefinePlugin({
     'process.env': {
@@ -34,7 +34,7 @@ if (NODE_ENV === 'production') {
     },
   }));
   plugins.push(new ExtractTextPlugin('texascamp.[hash].css'));
-  plugins.push(new ImageminPlugin(['/.*/', './icons-*/**']));
+  // plugins.push(new ImageminPlugin(['/.*/', './icons-*/**']));
   plugins.push(new StyleExtHtmlWebpackPlugin());
 }
 
@@ -74,7 +74,7 @@ if (NODE_ENV === 'production') {
 module.exports = {
   entry: "./" + THEME_DIR + 'index.jsx',
   output: {
-    path: `${__dirname}` + THEME_DIR + '/dist',
+    path: `${__dirname}` + '/build',
     filename: 'texascamp.[hash].js',
   },
   module: {
