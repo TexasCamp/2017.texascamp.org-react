@@ -4,7 +4,7 @@ import drupalicon from './drupalicon-header.svg';
 function Header() {
   return (
     <div id="header">
-      <Drupalicon /> Texas Camp | June 2-4, 2017, Austin, TX
+      <Drupalicon /> Texas Camp &middot; June 2-4, 2017, Austin, TX
     </div>
   );
 }

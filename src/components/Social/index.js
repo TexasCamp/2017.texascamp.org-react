@@ -5,7 +5,7 @@ import facebook from './facebook.svg';
 function Social() {
   return (
     <div id="social">
-      <Twitter /> | <Facebook /> | <CodeOfConduct />
+      <Twitter /> &nbsp; <Facebook /> &nbsp; <CodeOfConduct />
     </div>
   );
 }
