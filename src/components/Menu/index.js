@@ -22,7 +22,7 @@ class Menu extends React.Component {
       <div id="menu">
         <Link
           className="menu__item"
-          to="about"g
+          to="about"
           onSetActive={this.handleSetActive}
           spy
           smooth
