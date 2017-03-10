@@ -17,12 +17,16 @@ class Menu extends React.Component {
   scrollMore() {
     scroll.scrollMore(100);
   }
+  handleSetActive(to) {
+    console.log(to);
+  }
   render() {
     return (
       <div id="menu">
         <Link
           className="menu__item"
-          to="about"
+          to="about"g
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -33,6 +37,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="tickets"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -43,6 +48,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="sessions"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -53,6 +59,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="sponsors"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -63,6 +70,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="venue"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -73,6 +81,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="news"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
