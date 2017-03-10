@@ -3,8 +3,14 @@
 
 #top {
   @extend .clearfix;
-  margin: 0 2vw;
+  padding: 0 7vw;
   height: 7vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $c-dust-light;
+  z-index: 1000;
 }
 
 #middle {
@@ -13,8 +19,14 @@
 
 #bottom {
   @extend .clearfix;
-  margin: 0 2vw;
+  padding: 0 7vw;
   height: 7vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: $c-dust-light;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 700px) {
