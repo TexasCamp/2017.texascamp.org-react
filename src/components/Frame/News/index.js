@@ -1,6 +1,7 @@
 import React from 'react';
 import Skeleton from '../Skeleton';
 import background from './news-bg.jpg';
+import ponyExpress from './pony-express.png';
 
 function News() {
   return (
@@ -11,7 +12,7 @@ function News() {
       title="Submission deadline fast approaching"
       body="Submit a session"
       rightElement={
-        <img src="/" alt="signup for news" />
+        <img src={ponyExpress} alt="signup for news" />
       }
     />
   );
