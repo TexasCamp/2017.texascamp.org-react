@@ -5,7 +5,7 @@ import logoOutline from './logo-outline.svg';
 
 function Start() {
   return (
-    <div id="start">
+    <div name="start" id="start" className="start">
       <Background />
       <Text />
       <Logo />
