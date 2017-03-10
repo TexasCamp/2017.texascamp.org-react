@@ -5,12 +5,12 @@ class Skeleton extends React.Component {
     super(props);
 
     const skeletonClass = `skeleton ${this.props.class}`;
-    this.state = { class: skeletonClass };
+    this.state = { name: this.props.class, class: skeletonClass };
   }
 
   render() {
     return (
-      <div className={this.state.class}>
+      <div name={this.state.name} id={this.state.name} className={this.state.class}>
         <div className="background-image">
           <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
         </div>
