@@ -3,7 +3,7 @@ import Skeleton from '../Skeleton';
 
 function Venue() {
   return (
-    <div id="venue">
+    <div name="venue" id="venue" className="venue">
       <Skeleton
         class="venue"
         backgroundSrc="/"
