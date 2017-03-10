@@ -1,16 +1,10 @@
 import React from 'react';
-import { Link, Events, scroll, scrollSpy } from 'react-scroll';
+import { Link, scroll, scrollSpy } from 'react-scroll';
 
 class Menu extends React.Component {
   componentDidMount() {
     scrollSpy.update();
   }
-
-  componentWillUnmount() {
-    Events.scrollEvent.remove('begin');
-    Events.scrollEvent.remove('end');
-  }
-
   scrollToTop() {
     scroll.scrollToTop();
   }
@@ -22,8 +16,6 @@ class Menu extends React.Component {
   }
   scrollMore() {
     scroll.scrollMore(100);
-  }
-  handleSetActive() {
   }
   render() {
     return (
