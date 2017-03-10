@@ -2,8 +2,16 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 46vw;
+  //height: 48vw;
   overflow: hidden;
+
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+  }
 
   .left {
     @include grid-span(5,2);
@@ -34,7 +42,7 @@
 
   .background-image {
     z-index: 5;
-    position: absolute;
+    position: relative;
     bottom: 0;
   }
 
