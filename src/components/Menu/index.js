@@ -21,13 +21,63 @@ class Menu extends React.Component {
     return (
       <div id="menu">
         <Link
-          className="venueLink"
+          className="menu__item"
+          to="about"
+          spy
+          smooth
+          duration={500}
+        >
+          About
+        </Link>
+
+        <Link
+          className="menu__item"
+          to="tickets"
+          spy
+          smooth
+          duration={500}
+        >
+          Tickets
+        </Link>
+
+        <Link
+          className="menu__item"
+          to="sessions"
+          spy
+          smooth
+          duration={500}
+        >
+          Sessions
+        </Link>
+
+        <Link
+          className="menu__item"
+          to="sponsors"
+          spy
+          smooth
+          duration={500}
+        >
+          Sponsors
+        </Link>
+
+        <Link
+          className="menu__item"
           to="venue"
           spy
           smooth
           duration={500}
         >
-          Test 1
+          Venue
+        </Link>
+
+        <Link
+          className="menu__item"
+          to="news"
+          spy
+          smooth
+          duration={500}
+        >
+          News
         </Link>
       </div>
     );
