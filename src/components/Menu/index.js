@@ -23,6 +23,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="about"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -33,6 +34,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="tickets"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -43,6 +45,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="sessions"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -53,6 +56,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="sponsors"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -63,6 +67,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="venue"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
@@ -73,6 +78,7 @@ class Menu extends React.Component {
         <Link
           className="menu__item"
           to="news"
+          onSetActive={this.handleSetActive}
           spy
           smooth
           duration={500}
