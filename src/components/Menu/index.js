@@ -17,9 +17,6 @@ class Menu extends React.Component {
   scrollMore() {
     scroll.scrollMore(100);
   }
-  handleSetActive(to) {
-    console.log(to);
-  }
   render() {
     return (
       <div id="menu">
