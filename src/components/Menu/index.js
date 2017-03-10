@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Element, Events, scroll, scrollSpy } from 'react-scroll';
+import { Link, Events, scroll, scrollSpy } from 'react-scroll';
 
 class Menu extends React.Component {
   componentDidMount() {
@@ -27,23 +27,16 @@ class Menu extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div id="menu">
         <Link
-          className="test"
-          activeClass="active"
-          to="test1"
+          className="venueLink"
+          to="venue"
           spy
           smooth
-          offset={50}
           duration={500}
-          onSetActive={this.handleSetActive}
         >
           Test 1
         </Link>
-
-        <Element name="test1" className="element">
-          test 1
-        </Element>
       </div>
     );
   }
