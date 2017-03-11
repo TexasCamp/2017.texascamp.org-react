@@ -44,56 +44,6 @@
       width: 55%;
     }
   }
-
-  .section--image {
-    width: 75%;
-    margin: auto;
-
-    @include breakpoint($bp-narrow) {
-      position: absolute;
-      z-index: 10;
-      height: 100%;
-
-      right: 0;
-      width: 45%;
-    }
-
-
-    .image-wrapper {
-      position: relative;
-      height: 98%;
-
-      @include breakpoint($bp-narrow) {
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 90%;
-      }
-
-      @include breakpoint($bp-wide) {
-        height: 80%;
-      }
-
-      .button--primary {
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
-      }
-
-      img {
-        display: block;
-        margin: auto;
-        @include breakpoint($bp-narrow) {
-          height: 100%;
-        }
-        width: auto;
-      }
-    }
-  }
 }
 
 .skeleton__body {
