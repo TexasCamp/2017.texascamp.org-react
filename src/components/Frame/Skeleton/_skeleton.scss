@@ -31,17 +31,6 @@
     }
   }
 
-  .section--title {
-    text-align: center;
-
-    @include breakpoint($bp-narrow) {
-      position: relative;
-      padding: 12% 0 0 8%;
-      float: left;
-      width: 55%;
-    }
-  }
-
   .section--body {
     padding-bottom: 8%;
 
@@ -103,17 +92,8 @@
         }
         width: auto;
       }
-
     }
-
   }
-
-
-
-}
-
-.skeleton__title {
-  @include text-heading;
 }
 
 .skeleton__body {

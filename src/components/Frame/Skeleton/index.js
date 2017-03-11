@@ -1,4 +1,5 @@
 import React from 'react';
+import Title from './Title';
 
 class Skeleton extends React.Component {
   constructor(props) {
@@ -16,9 +17,7 @@ class Skeleton extends React.Component {
         </div>
 
         <div className="wrapper">
-          <div className="section--title">
-            <h2 className="skeleton__title">{this.props.title}</h2>
-          </div>
+          <Title title={this.props.title} />
           <div className="section--image">
             {this.props.rightElement}
           </div>
