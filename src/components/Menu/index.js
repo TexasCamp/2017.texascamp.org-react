@@ -18,13 +18,15 @@ class Menu extends React.Component {
     scroll.scrollMore(100);
   }
   render() {
+    let offset = -50;
+
     return (
       <nav id="menu">
         <ul>
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               to="about"
               onSetActive={this.handleSetActive}
               isDynamic={Boolean(true)}
@@ -38,7 +40,7 @@ class Menu extends React.Component {
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               isDynamic={Boolean(true)}
               to="tickets"
               onSetActive={this.handleSetActive}
@@ -52,7 +54,7 @@ class Menu extends React.Component {
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               isDynamic={Boolean(true)}
               to="sessions"
               onSetActive={this.handleSetActive}
@@ -66,7 +68,7 @@ class Menu extends React.Component {
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               isDynamic={Boolean(true)}
               to="sponsors"
               onSetActive={this.handleSetActive}
@@ -80,7 +82,7 @@ class Menu extends React.Component {
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               isDynamic={Boolean(true)}
               to="venue"
               onSetActive={this.handleSetActive}
@@ -94,7 +96,7 @@ class Menu extends React.Component {
           <li>
             <Link
               className="menu__item"
-              containerId="middle"
+              offset={offset}
               isDynamic={Boolean(true)}
               to="news"
               onSetActive={this.handleSetActive}

@@ -4,14 +4,16 @@ $outer-frame-width: 7.5vh;
   margin: $outer-frame-width 0 0 0;
   position: relative;
   z-index: 1;
+
+  @include breakpoint($bp-narrow) {
+    margin: $outer-frame-width;
+  }
 }
 
 
-#top {
+#top,
+#bottom {
   @extend .clearfix;
-  position: fixed;
-  top: 0;
-  left: 0;
   height: $outer-frame-width;
   width: 100%;
   margin: 0;
@@ -20,42 +22,25 @@ $outer-frame-width: 7.5vh;
   background-color: $c-dust-light;
 }
 
-#middle {
-  @extend .clearfix;
-  position: relative;
-  height: 93vh;
-  overflow: scroll;
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-#bottom{
-  @extend .clearfix;
-  height: $outer-frame-width;
-  width: 100%;
-  margin: 0;
-  padding: 0 $outer-frame-width;
-}
-
-
-@media screen and (min-width: 700px) {
-  #app {
-    //margin: 0 7vh;
-    margin: $outer-frame-width;
-  }
-
-  #top {
-    //margin: 0;
-  }
-
-  #middle {
-    position: relative;
-    height: 86vh;
-    overflow: scroll;
-  }
-
-  #bottom {
+#bottom {
+  @include breakpoint($bp-narrow) {
     position: fixed;
     bottom: 0;
     left: 0;
   }
+}
 
+#middle {
+  @extend .clearfix;
+  margin-top: $outer-frame-width;
+
+  @include breakpoint($bp-narrow) {
+    margin-bottom: $outer-frame-width;
+  }
 }

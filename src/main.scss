@@ -26,10 +26,10 @@ $base-font-size: 16px;
 
 
 // Setup Breakpoints
-$bp-handheld-only: 'max-width:  679px';
-$bp-narrow:        'min-width:  680px';
-$bp-medium:        'min-width:  980px';
-$bp-wide:          'min-width:  1080px';
+$bp-handheld-only: max-width 679px;
+$bp-narrow:        min-width 680px;
+$bp-medium:        min-width 980px;
+$bp-wide:          min-width 1080px;
 $bp-portrait:      orientation portrait;
 
 // Set up basic colors and typefaces
