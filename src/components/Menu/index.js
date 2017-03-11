@@ -18,70 +18,100 @@ class Menu extends React.Component {
     scroll.scrollMore(100);
   }
   render() {
+    let offset = -50;
+
     return (
-      <div id="menu">
-        <Link
-          className="menu__item"
-          to="about"
-          spy
-          smooth
-          duration={500}
-        >
-          About
-        </Link>
-
-        <Link
-          className="menu__item"
-          to="tickets"
-          spy
-          smooth
-          duration={500}
-        >
-          Tickets
-        </Link>
-
-        <Link
-          className="menu__item"
-          to="sessions"
-          spy
-          smooth
-          duration={500}
-        >
-          Sessions
-        </Link>
-
-        <Link
-          className="menu__item"
-          to="sponsors"
-          spy
-          smooth
-          duration={500}
-        >
-          Sponsors
-        </Link>
-
-        <Link
-          className="menu__item"
-          to="venue"
-          spy
-          smooth
-          duration={500}
-        >
-          Venue
-        </Link>
-
-        <Link
-          className="menu__item"
-          to="news"
-          spy
-          smooth
-          duration={500}
-        >
-          News
-        </Link>
-      </div>
+      <nav id="menu">
+        <ul>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              to="about"
+              onSetActive={this.handleSetActive}
+              isDynamic={Boolean(true)}
+              spy
+              smooth
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              isDynamic={Boolean(true)}
+              to="tickets"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              Tickets
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              isDynamic={Boolean(true)}
+              to="sessions"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              Sessions
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              isDynamic={Boolean(true)}
+              to="sponsors"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              Sponsors
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              isDynamic={Boolean(true)}
+              to="venue"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              Venue
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="menu__item"
+              offset={offset}
+              isDynamic={Boolean(true)}
+              to="news"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              News
+            </Link>
+          </li>
+        </ul>
+      </nav>
     );
   }
 }
+
 
 export default Menu;

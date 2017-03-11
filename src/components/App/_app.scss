@@ -1,51 +1,46 @@
+$outer-frame-width: 7.5vh;
+
 #app {
+  margin: $outer-frame-width 0 0 0;
+  position: relative;
+  z-index: 1;
+
+  @include breakpoint($bp-narrow) {
+    margin: $outer-frame-width;
+  }
+}
+
+
+#top,
+#bottom {
+  @extend .clearfix;
+  height: $outer-frame-width;
+  width: 100%;
+  margin: 0;
+  padding: 0 $outer-frame-width;
+  z-index: 10;
+  background-color: $c-dust-light;
 }
 
 #top {
-  @extend .clearfix;
-  padding: 0 7vw;
-  height: 7vh;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: $c-dust-light;
-  z-index: 1000;
+}
+
+#bottom {
+  @include breakpoint($bp-narrow) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 #middle {
   @extend .clearfix;
-}
+  margin-top: $outer-frame-width;
 
-#bottom {
-  @extend .clearfix;
-  padding: 0 7vw;
-  height: 7vh;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: $c-dust-light;
-  z-index: 1000;
-}
-
-@media screen and (min-width: 700px) {
-  #app {
-    margin: 0 7vh;
+  @include breakpoint($bp-narrow) {
+    margin-bottom: $outer-frame-width;
   }
-
-  #top {
-    margin: 0;
-    height: 7vh;
-  }
-
-  #middle {
-    height: 86vh;
-  }
-
-  #bottom {
-    margin: 0;
-    height: 7vh;
-  }
-
 }
