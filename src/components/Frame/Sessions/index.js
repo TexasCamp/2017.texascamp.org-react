@@ -12,7 +12,9 @@ function Sessions() {
       title="Step right up"
       body="Blah blah blah needs words."
       rightElement={
-        <img src={wanted} alt="submit a session" />
+        <div className="image-wrapper">
+          <img src={wanted} alt="submit a session" />
+        </div>
       }
     />
   );

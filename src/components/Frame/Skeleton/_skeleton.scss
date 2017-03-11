@@ -18,6 +18,8 @@
     position: relative;
     z-index: 10;
     margin-top: 10vh;
+    overflow: scroll;
+    height: 100%;
   }
 
   .right {
@@ -27,13 +29,27 @@
     height: 100%;
 
     .image-wrapper {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       height: 80%;
-      margin-top: 10%;
+
+      .button--primary {
+        position: absolute;
+        left: 50%;
+        bottom: 9%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%)
+      }
 
       img {
         display: block;
         margin: auto;
         height: 100%;
+        width: auto;
       }
 
     }

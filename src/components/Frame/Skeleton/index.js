@@ -22,9 +22,7 @@ class Skeleton extends React.Component {
           </div>
 
           <div className="right">
-            <div className="image-wrapper">
-              {this.props.rightElement}
-            </div>
+            {this.props.rightElement}
           </div>
         </div>
       </div>
