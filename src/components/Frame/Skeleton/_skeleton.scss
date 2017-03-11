@@ -5,39 +5,80 @@
   //height: 48vw;
   overflow: hidden;
 
-  .wrapper {
+  .background-image {
     position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
+    opacity: .2;
+
+    @include breakpoint($bp-narrow) {
+      z-index: 5;
+      position: relative;
+      bottom: 0;
+    }
   }
 
-  .left {
-    @include grid-span(5,2);
-    position: relative;
+  .wrapper {
     z-index: 10;
-    margin-top: 10vh;
-    overflow: scroll;
-    height: 100%;
-  }
 
-  .right {
-    @include grid-span(5,8);
-    position: relative;
-    z-index: 10;
-    height: 100%;
-
-    .image-wrapper {
-      margin: auto;
+    @include breakpoint($bp-narrow) {
       position: absolute;
       top: 0;
       left: 0;
-      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+  }
+
+  .section--title {
+    text-align: center;
+
+    @include breakpoint($bp-narrow) {
+      position: relative;
+      padding: 12% 0 0 8%;
+      overflow: scroll;
+      float: left;
+      width: 55%;
+    }
+  }
+
+  .section--body {
+    @include breakpoint($bp-narrow) {
+      position: relative;
+      padding-left: 8%;
+      overflow: scroll;
+      height: 100%;
+
+      clear: left;
+      float: left;
+      width: 55%;
+    }
+  }
+
+  .section--image {
+    width: 75%;
+    margin: auto;
+
+    @include breakpoint($bp-narrow) {
+      position: absolute;
+      z-index: 10;
+      height: 100%;
+
       right: 0;
+      width: 45%;
+    }
+
+
+    .image-wrapper {
+      position: relative;
       height: 98%;
 
       @include breakpoint($bp-narrow) {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
         height: 90%;
       }
 
@@ -55,7 +96,9 @@
       img {
         display: block;
         margin: auto;
-        height: 100%;
+        @include breakpoint($bp-narrow) {
+          height: 100%;
+        }
         width: auto;
       }
 
@@ -63,11 +106,7 @@
 
   }
 
-  .background-image {
-    z-index: 5;
-    position: relative;
-    bottom: 0;
-  }
+
 
 }
 

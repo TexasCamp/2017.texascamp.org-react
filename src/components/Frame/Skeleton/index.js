@@ -16,13 +16,14 @@ class Skeleton extends React.Component {
         </div>
 
         <div className="wrapper">
-          <div className="left">
+          <div className="section--title">
             <h2 className="skeleton__title">{this.props.title}</h2>
-            <p className="skeleton__body">{this.props.body}</p>
           </div>
-
-          <div className="right">
+          <div className="section--image">
             {this.props.rightElement}
+          </div>
+          <div className="section--body">
+            <p className="skeleton__body">{this.props.body}</p>
           </div>
         </div>
       </div>
