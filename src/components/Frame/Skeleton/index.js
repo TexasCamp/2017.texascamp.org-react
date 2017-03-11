@@ -32,8 +32,8 @@ class Skeleton extends React.Component {
 }
 Skeleton.propTypes = {
   class: React.PropTypes.string.isRequired,
-  backgroundSrc: React.PropTypes.string.isRequired,
-  backgroundAlt: React.PropTypes.string.isRequired,
+  backgroundSrc: React.PropTypes.string,
+  backgroundAlt: React.PropTypes.string,
   title: React.PropTypes.string,
   body: React.PropTypes.string,
   rightElement: React.PropTypes.element,
