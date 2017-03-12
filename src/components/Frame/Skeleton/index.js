@@ -2,6 +2,7 @@ import React from 'react';
 import Title from './Title';
 import Image from './Image';
 import Body from './Body';
+import Background from './Background';
 
 class Skeleton extends React.Component {
   constructor(props) {
@@ -12,11 +13,20 @@ class Skeleton extends React.Component {
   }
 
   render() {
+    let background = null;
+
+    if (this.props.backgroundSrc) {
+      background = (
+        <Background
+          backgroundSrc={this.props.backgroundSrc}
+          backgroundAlt={this.props.backgroundAlt}
+        />
+      );
+    }
+
     return (
       <div name={this.state.name} id={this.state.name} className={this.state.class}>
-        <div className="background-image">
-          <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
-        </div>
+        {background}
 
         <div className="wrapper">
           <Title title={this.props.title} />

@@ -1,0 +1,12 @@
+.background-image {
+  position: absolute;
+  bottom: 0;
+  opacity: .2;
+
+  @include breakpoint($bp-narrow) {
+    opacity: 1;
+    z-index: 5;
+    position: relative;
+    bottom: 0;
+  }
+}
