@@ -27,11 +27,23 @@ class Skeleton extends React.Component {
       <div name={this.props.class} id={this.props.class} className={`skeleton ${this.props.class}`}>
         {background}
 
-        <div className={`wrapper wrapper__left ${this.props.class}__left`}>
+        <div
+          className={`
+            skeleton__wrapper
+            skeleton__wrapper--left
+            skeleton__${this.props.class}--left
+          `}
+        >
           <Title title={this.props.title} />
           <Body body={this.props.body} />
         </div>
-        <div className={`wrapper wrapper__right ${this.props.class}__right`}>
+        <div
+          className={`
+            skeleton__wrapper
+            skeleton__wrapper--right
+            skeleton__${this.props.class}--right
+          `}
+        >
           <Image rightElement={this.props.rightElement} />
         </div>
       </div>
