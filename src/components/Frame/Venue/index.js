@@ -1,6 +1,7 @@
 import React from 'react';
 import Skeleton from '../Skeleton';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import fancyMapStyles from './fancyMapStyles.json';
 
 /*
  * Sample From: https://developers.google.com/maps/documentation/javascript/examples/map-simple
@@ -10,6 +11,7 @@ const StyledMapExampleGoogleMap = withGoogleMap(props => (
     defaultZoom={14}
     defaultCenter={{ lat: 30.407760, lng: -97.798158 }}
     defaultOptions={{
+      styles: fancyMapStyles,
       scrollwheel: false,
     }}
   >
