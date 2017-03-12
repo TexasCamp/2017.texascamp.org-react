@@ -5,6 +5,10 @@ $outer-frame-width: 7.5vh;
   position: relative;
   z-index: 1;
 
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
   @include breakpoint($bp-narrow) {
     margin: $outer-frame-width;
   }
@@ -39,6 +43,7 @@ $outer-frame-width: 7.5vh;
 #middle {
   @extend .clearfix;
   margin-top: $outer-frame-width;
+  background-color: #e3dcd6;
 
   @include breakpoint($bp-narrow) {
     margin-bottom: $outer-frame-width;

@@ -5,8 +5,8 @@ import background from './news-bg.jpg';
 import ponyExpress from './pony-express.png';
 
 function News() {
-  let NewsletterImage = (<div className="newsletter-image">
-    <img src={ponyExpress} alt="signup for news" width="376.5px" />
+  let NewsletterImage = (<div className="image-wrapper">
+    <img src={ponyExpress} alt="signup for news" />
     <NewsletterForm />
   </div>);
 

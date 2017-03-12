@@ -1,31 +1,50 @@
 import React from 'react';
+import Title from './Title';
+import Image from './Image';
+import Body from './Body';
+import Background from './Background';
 
 class Skeleton extends React.Component {
   constructor(props) {
     super(props);
 
-    const skeletonClass = `skeleton ${this.props.class}`;
-    this.state = { name: this.props.class, class: skeletonClass };
+    this.props = props;
   }
 
   render() {
+    let background = null;
+
+    if (this.props.backgroundSrc) {
+      background = (
+        <Background
+          backgroundSrc={this.props.backgroundSrc}
+          backgroundAlt={this.props.backgroundAlt}
+        />
+      );
+    }
+
     return (
-      <div name={this.state.name} id={this.state.name} className={this.state.class}>
-        <div className="background-image">
-          <img src={this.props.backgroundSrc} alt={this.props.backgroundAlt} />
+      <div name={this.props.class} id={this.props.class} className={`skeleton ${this.props.class}`}>
+        {background}
+
+        <div
+          className={`
+            skeleton__wrapper
+            skeleton__wrapper--left
+            skeleton__${this.props.class}--left
+          `}
+        >
+          <Title title={this.props.title} />
+          <Body body={this.props.body} />
         </div>
-
-        <div className="wrapper">
-          <div className="left">
-            <h2 className="skeleton__title">{this.props.title}</h2>
-            <p className="skeleton__body">{this.props.body}</p>
-          </div>
-
-          <div className="right">
-            <div className="image-wrapper">
-              {this.props.rightElement}
-            </div>
-          </div>
+        <div
+          className={`
+            skeleton__wrapper
+            skeleton__wrapper--right
+            skeleton__${this.props.class}--right
+          `}
+        >
+          <Image rightElement={this.props.rightElement} />
         </div>
       </div>
     );
@@ -33,8 +52,8 @@ class Skeleton extends React.Component {
 }
 Skeleton.propTypes = {
   class: React.PropTypes.string.isRequired,
-  backgroundSrc: React.PropTypes.string.isRequired,
-  backgroundAlt: React.PropTypes.string.isRequired,
+  backgroundSrc: React.PropTypes.string,
+  backgroundAlt: React.PropTypes.string,
   title: React.PropTypes.string,
   body: React.PropTypes.string,
   rightElement: React.PropTypes.element,

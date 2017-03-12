@@ -5,8 +5,8 @@ import background from './tickets-bg.jpg';
 import ticket from './ticket.png';
 
 function Tickets() {
-  let TicketImage = (<div className="ticket-image">
-    <img src={ticket} alt="register ticket" width="327.5px" />
+  let TicketImage = (<div className="image-wrapper">
+    <img src={ticket} alt="register ticket" />
     <Button link="https://texas-camp-2017.eventbrite.com" text="Register" />
   </div>);
 

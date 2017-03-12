@@ -3,14 +3,8 @@
     opacity: 0.2;
   }
 
-  .ticket-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .button--primary {
-      margin-top: -75px;
-      margin-right: 50px;
-    }
+  .button--primary {
+    bottom: 9%;
   }
+
 }
