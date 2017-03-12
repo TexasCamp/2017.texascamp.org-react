@@ -26,7 +26,7 @@ function Venue() {
         rightElement={
           <SimpleMapExampleGoogleMap
             containerElement={
-              <div id="google-map" style={{ height: '100%' }} />
+              <div id="google-map" />
             }
             mapElement={
               <div style={{ height: '100%' }} />
