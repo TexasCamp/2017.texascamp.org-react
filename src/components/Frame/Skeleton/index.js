@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Image from './Image';
+import Body from './Body';
 
 class Skeleton extends React.Component {
   constructor(props) {
@@ -20,9 +21,7 @@ class Skeleton extends React.Component {
         <div className="wrapper">
           <Title title={this.props.title} />
           <Image rightElement={this.props.rightElement} />
-          <div className="section--body">
-            <p className="skeleton__body">{this.props.body}</p>
-          </div>
+          <Body body={this.props.body} />
         </div>
       </div>
     );
