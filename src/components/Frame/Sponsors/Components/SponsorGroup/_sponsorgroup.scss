@@ -1,0 +1,15 @@
+.sponsor-group {
+  padding: 0 44px;
+  border-left: 3px solid $c-dust-light;
+  position: relative;
+
+  h3 {
+    font-family: $f-heavy;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+  }
+}
