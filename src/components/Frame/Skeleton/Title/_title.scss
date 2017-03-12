@@ -1,0 +1,14 @@
+.section--title {
+  text-align: center;
+
+  @include breakpoint($bp-narrow) {
+    position: relative;
+    padding: 12% 0 0 8%;
+    float: left;
+    width: 55%;
+  }
+}
+
+.skeleton__title {
+  @include text-heading;
+}
