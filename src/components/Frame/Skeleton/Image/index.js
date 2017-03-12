@@ -17,7 +17,7 @@ class Image extends React.Component {
 }
 
 Image.propTypes = {
-  rightElement: React.PropTypes.string,
+  rightElement: React.PropTypes.element,
 };
 
 export default Image;
