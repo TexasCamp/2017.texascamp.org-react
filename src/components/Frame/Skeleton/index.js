@@ -8,8 +8,7 @@ class Skeleton extends React.Component {
   constructor(props) {
     super(props);
 
-    const skeletonClass = `skeleton ${this.props.class}`;
-    this.state = { name: this.props.class, class: skeletonClass };
+    this.props = props;
   }
 
   render() {
@@ -25,13 +24,15 @@ class Skeleton extends React.Component {
     }
 
     return (
-      <div name={this.state.name} id={this.state.name} className={this.state.class}>
+      <div name={this.props.class} id={this.props.class} className={`skeleton ${this.props.class}`}>
         {background}
 
-        <div className="wrapper">
+        <div className={`wrapper wrapper__left ${this.props.class}__left`}>
           <Title title={this.props.title} />
-          <Image rightElement={this.props.rightElement} />
           <Body body={this.props.body} />
+        </div>
+        <div className={`wrapper wrapper__right ${this.props.class}__right`}>
+          <Image rightElement={this.props.rightElement} />
         </div>
       </div>
     );
