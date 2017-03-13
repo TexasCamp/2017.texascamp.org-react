@@ -1,5 +1,7 @@
 import React from 'react';
-import Skeleton from '../Skeleton';
+import Button from '../../Button';
+import Page from '../../Page';
+import Content from '../../Content';
 import SponsorGroup from './Components/SponsorGroup';
 import Sponsor from './Components/Sponsor';
 import background from './sponsors-bg.jpg';
@@ -47,14 +49,17 @@ function Sponsors() {
   ];
 
   return (
-    <Skeleton
-      class="sponsors"
-      backgroundSrc={background}
-      backgroundAlt="texas camp sessions background"
-      title=""
-      body=""
-      rightElement={sponsors}
-    />
+    <Page name="sponsors" background={background} classes={['two-col']}>
+      <Content classes={['content--prospectus']}>
+        <Button
+          link="//2017.texascamp.org/sites/default/files/texas-camp-sponsor-prospectus.pdf"
+          text="Download Prospectus"
+        />
+      </Content>
+      <Content classes={['content--aside']}>
+        {sponsors}
+      </Content>
+    </Page>
   );
 }
 
