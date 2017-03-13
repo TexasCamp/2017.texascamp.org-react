@@ -32,6 +32,9 @@ $bp-medium:        min-width 980px;
 $bp-wide:          min-width 1080px;
 $bp-portrait:      orientation portrait;
 
+@import "./reset.scss";
+@import "./helpers.scss";
+
 // Set up basic colors and typefaces
 html {
   font-size: $base-font-size;
@@ -45,9 +48,6 @@ body {
 }
 
 // Import partials
-@import "./reset.scss";
-@import "./helpers.scss";
-
 @import "./components/App/app.scss";
 @import "./components/Button/button.scss";
 @import "./components/Frame/Skeleton/skeleton.scss";
@@ -69,3 +69,5 @@ body {
 @import "./components/Frame/Finish/finish.scss";
 @import "./components/Social/social.scss";
 @import "./components/Footer/footer.scss";
+
+@import "./JustDumpItAllHere.scss";
