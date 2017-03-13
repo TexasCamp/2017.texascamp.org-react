@@ -16,6 +16,10 @@ h2 {
   background-repeat: no-repeat;
 }
 
+.page.fixed-bg {
+  background-attachment: fixed;
+}
+
 .page.two-col {
   @include add-grid(12);
   @include add-gutter(1/3);

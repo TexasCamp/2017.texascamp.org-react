@@ -1,5 +1,10 @@
-.sessions {
-  .background-image {
-    opacity: 0.2;
+.page--sessions {
+  .content--aside {
+    position: relative;
+  }
+
+  .button--primary {
+    position: absolute;
+    bottom: 11%;
   }
 }
