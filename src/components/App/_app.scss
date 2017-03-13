@@ -1,5 +1,9 @@
 $outer-frame-width: 7.5vh;
 
+p {
+  margin-bottom: 1em;
+}
+
 #app {
   margin: $outer-frame-width 0 0 0;
   position: relative;
