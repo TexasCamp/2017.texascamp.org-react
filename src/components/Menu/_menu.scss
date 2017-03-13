@@ -1,4 +1,4 @@
-#menu {
+.menu--main {
   @include text-small;
   float: right;
   position: relative;
@@ -6,7 +6,7 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  
+
   li {
     display: inline-block;
     padding: 0 1em;

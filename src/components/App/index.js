@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../Header';
+import CampInfo from '../CampInfo';
 import Menu from '../Menu';
 import Start from '../Frame/Start';
 import About from '../Frame/About';
@@ -15,11 +15,11 @@ import Footer from '../Footer';
 function App() {
   return (
     <div id="app">
-      <section id="top">
-        <Header />
+      <header className="header header--page">
+        <CampInfo />
         <Menu />
-      </section>
-      <section id="middle">
+      </header>
+      <section className="pages">
         <Start />
         <About />
         <Tickets />
@@ -29,10 +29,10 @@ function App() {
         <News />
         <Finish />
       </section>
-      <section id="bottom">
+      <footer className="footer footer--page">
         <Social />
         <Footer />
-      </section>
+      </footer>
     </div>
   );
 }

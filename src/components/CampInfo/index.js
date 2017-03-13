@@ -1,11 +1,11 @@
 import React from 'react';
 import drupalicon from './drupalicon-header.svg';
 
-function Header() {
+function CampInfo() {
   return (
-    <div id="header">
+    <section className="camp-info">
       <Drupalicon /> Texas Camp &middot; June 2-4, 2017, Austin, TX
-    </div>
+    </section>
   );
 }
 
@@ -17,4 +17,4 @@ function Drupalicon() {
   );
 }
 
-export default Header;
+export default CampInfo;

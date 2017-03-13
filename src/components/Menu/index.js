@@ -21,7 +21,7 @@ class Menu extends React.Component {
     let offset = -50;
 
     return (
-      <nav id="menu">
+      <nav className="menu menu--main">
         <ul>
           <li>
             <Link

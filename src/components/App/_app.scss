@@ -19,8 +19,8 @@ p {
 }
 
 
-#top,
-#bottom {
+.header--page,
+.footer--page {
   @extend .clearfix;
   height: $outer-frame-width;
   width: 100%;
@@ -30,13 +30,13 @@ p {
   background-color: $c-dust-light;
 }
 
-#top {
+.header--page {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-#bottom {
+.footer--page {
   @include breakpoint($bp-narrow) {
     position: fixed;
     bottom: 0;
@@ -44,7 +44,7 @@ p {
   }
 }
 
-#middle {
+.pages {
   @extend .clearfix;
   margin-top: $outer-frame-width;
   background-color: #e3dcd6;
