@@ -6,9 +6,11 @@ function Page(props) {
     `page--${props.name}`,
   ].concat(props.classes);
 
-  let pageStyles = {
-    backgroundImage: `url(${props.background})`,
-  };
+  let pageStyles = {};
+
+  if (props.background) {
+    pageStyles.backgroundImage = `url(${props.background})`;
+  }
 
   return (
     <article id={props.name} className={classes.join(' ')} style={pageStyles}>
@@ -19,7 +21,7 @@ function Page(props) {
 
 Page.propTypes = {
   name: React.PropTypes.string.isRequired,
-  background: React.PropTypes.string.isRequired,
+  background: React.PropTypes.string,
   classes: React.PropTypes.array,
   children: React.PropTypes.node,
 };

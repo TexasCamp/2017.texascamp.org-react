@@ -1,18 +1,15 @@
 import React from 'react';
-import Skeleton from '../Skeleton';
+import Page from '../../Page';
+import Title from '../../Title';
 
 function Venue() {
   return (
-    <div name="venue" id="venue" className="venue">
-      <Skeleton
-        class="venue"
-        title="In a pickle"
-        body="How to get to TexasCamp 2017"
-        rightElement={
-          <div></div>
-        }
-      />
-    </div>
+    <Page name="venue">
+      <section className="content--venue">
+        <Title level="h2" title="In a pickle" />
+        <p>How to get to TexasCamp 2017</p>
+      </section>
+    </Page>
   );
 }
 
