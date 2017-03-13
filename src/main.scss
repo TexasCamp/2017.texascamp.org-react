@@ -51,6 +51,7 @@ body {
 }
 
 // Import partials
+@import "./JustDumpItAllHere.scss";
 @import "./components/App/app.scss";
 @import "./components/Button/button.scss";
 @import "./components/Frame/Skeleton/skeleton.scss";
@@ -71,5 +72,3 @@ body {
 @import "./components/Frame/Finish/finish.scss";
 @import "./components/Social/social.scss";
 @import "./components/Footer/footer.scss";
-
-@import "./JustDumpItAllHere.scss";
