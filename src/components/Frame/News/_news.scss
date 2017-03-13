@@ -1,17 +1,17 @@
-.news {
+.page--news {
+  .content--aside {
+    position: relative;
+  }
 
-  .background-image {
-    opacity: 0.2;
+  .newsletter {
+    position: absolute;
+    bottom: 15%;
+    width: 33%;
+    text-align: center;
   }
 
   input[type="text"],
   input[type="email"] {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 45%;
-
     font-size: 12px;
     font-family: $f-base;
     background: transparent;
@@ -19,7 +19,8 @@
     border-radius: 2px;
     color: $c-black;
     padding: 15px;
-
+    margin-bottom: 10%;
+    width: 100%;
 
     &::placeholder {
       color: $c-black;
@@ -30,17 +31,4 @@
       outline: none;
     }
   }
-
-  .button--primary {
-    bottom: 14%;
-  }
-
-  input[type="text"] {
-    bottom: 29%;
-  }
-
-  input[type="email"] {
-    bottom: 42%;
-  }
-
 }
