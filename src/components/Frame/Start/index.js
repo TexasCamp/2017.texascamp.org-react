@@ -1,44 +1,16 @@
 import React from 'react';
+import Page from '../../Page';
 import background from './start-bg.jpg';
 import logo from './logo.svg';
 import logoOutline from './logo-outline.svg';
 
 function Start() {
   return (
-    <div name="start" id="start" className="start">
-      <Background />
-      <Text />
-      <Logo />
-      <LogoOutline />
-    </div>
-  );
-}
-
-function Background() {
-  return (
-    <img src={background} alt="texas camp background" />
-  );
-}
-
-function Text() {
-  return (
-    <h1>A DRUPAL FRONTIER.</h1>
-  );
-}
-
-function Logo() {
-  return (
-    <div id="logo">
-      <img src={logo} alt="texas camp logo" />
-    </div>
-  );
-}
-
-function LogoOutline() {
-  return (
-    <div id="logo-outline">
-      <img src={logoOutline} alt="texas camp logo outline" />
-    </div>
+    <Page name="start" background={background}>
+      <h1>A DRUPAL FRONTIER.</h1>
+      <img src={logo} alt="Texas Camp Logo" className="logo logo--infill" />
+      <img src={logoOutline} alt="Texas Camp Log Outline" className="logo logo--outline" />
+    </Page>
   );
 }
 

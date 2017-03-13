@@ -5,3 +5,11 @@ h1 {
 h2 {
   @include text-heading;
 }
+
+// Common Page Styles
+.page {
+  min-height: 46vw;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
