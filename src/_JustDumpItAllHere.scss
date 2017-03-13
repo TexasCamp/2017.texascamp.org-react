@@ -10,7 +10,6 @@ h2 {
 .page {
   @include clearfix;
   min-height: 46vw;
-  padding-top: 10vw;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -23,6 +22,7 @@ h2 {
 .page.two-col {
   @include add-grid(12);
   @include add-gutter(1/3);
+  padding-top: 10vw;
 
   h2 {
     @include grid-span(5,2);

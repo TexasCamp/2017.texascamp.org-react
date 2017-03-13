@@ -1,24 +1,26 @@
-#finish {
+.page--finish {
   position: relative;
-  //margin-bottom: 7vh;
-}
+  background-position: bottom center;
 
-.finish__quote {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 21%;
-  width: 100%;
-}
-
-.finish__quote-text {
-  @include text-small($font-size: 0.8rem);
-  margin-bottom: 1em;
-}
-
-.finish__quote-author {
-  font-family: $f-script;
-  &::before {
-    content: '-';
+  .finish__quote {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 27%;
+    width: 100%;
   }
+
+  .finish__quote-text {
+    @include text-small($font-size: 0.8rem);
+    margin-bottom: 1em;
+  }
+
+  .finish__quote-author {
+    font-family: $f-script;
+
+    &::before {
+      content: '-';
+    }
+  }
+
 }

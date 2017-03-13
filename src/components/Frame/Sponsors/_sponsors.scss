@@ -1,6 +1,10 @@
 .page--sponsors {
-  padding-top: 5vw;
   position: relative;
+
+  &.two-col {
+    padding-top: 5vw;
+  }
+
 
   .content--prospectus {
     position: absolute;
