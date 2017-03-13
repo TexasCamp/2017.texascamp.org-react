@@ -8,8 +8,25 @@ h2 {
 
 // Common Page Styles
 .page {
+  @include clearfix;
   min-height: 46vw;
+  padding-top: 10vw;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.page.two-col {
+  @include add-grid(12);
+  @include add-gutter(1/3);
+
+  h2 {
+    @include grid-span(5,2);
+    clear: both;
+  }
+
+  .content {
+    @include grid-span(5,2);
+    clear: both;
+  }
 }

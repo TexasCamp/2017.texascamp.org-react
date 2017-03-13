@@ -32,6 +32,9 @@ $bp-medium:        min-width 980px;
 $bp-wide:          min-width 1080px;
 $bp-portrait:      orientation portrait;
 
+// Singularity GS
+$include-clearfix: true;
+
 @import "./reset.scss";
 @import "./helpers.scss";
 
@@ -58,7 +61,6 @@ body {
 @import "./components/Menu/menu.scss";
 @import "./components/CampInfo/campinfo.scss";
 @import "./components/Frame/Start/start.scss";
-@import "./components/Frame/About/about.scss";
 @import "./components/Frame/News/news.scss";
 @import "./components/Frame/Sessions/sessions.scss";
 @import "./components/Frame/Sponsors/sponsors.scss";

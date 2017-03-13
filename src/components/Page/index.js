@@ -11,7 +11,7 @@ function Page(props) {
   };
 
   return (
-    <article className={classes.join(' ')} style={pageStyles}>
+    <article id={props.name} className={classes.join(' ')} style={pageStyles}>
       {props.children}
     </article>
   );
