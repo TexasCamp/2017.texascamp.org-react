@@ -35,6 +35,9 @@ $bp-portrait:      orientation portrait;
 // Singularity GS
 $include-clearfix: true;
 
+// MISC
+$outer-frame-width: 7.8vh;
+
 @import "./reset.scss";
 @import "./helpers.scss";
 
