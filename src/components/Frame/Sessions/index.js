@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../Button';
+import { Link } from 'react-router-dom';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -47,7 +47,7 @@ function Sessions() {
       </Content>
       <Content classes={['content--aside']}>
         <img src={wanted} alt="submit a session" width="411" />
-        <Button link="https://www.google.com" text="Submit a session" />
+        <Link to="/submit-session" className="button--primary">Submit a session</Link>
       </Content>
     </Page>
   );
