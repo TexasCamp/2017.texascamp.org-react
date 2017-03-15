@@ -56,6 +56,7 @@
     "react-redux": "^4.4.5",
     "react-router-dom": "^4.0.0",
     "react-scroll": "^1.4.7",
+    "react-widgets": "^3.4.6",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "sass-toolkit": "^2.10.0",

@@ -54,19 +54,19 @@ const loaders = [
     }
   },
   {
-    test: /\.png|.svg|.jpg|.gif$/,
+    test: /\.png|.svg|.jpg|.gif|\.ttf|\.woff|\.eot|\.ico$/,
     loaders: ['file'],
   },
 ];
 
 if (NODE_ENV === 'production') {
   loaders.push({
-    test: /\.scss$/,
+    test: /\.s?css$/,
     loader: ExtractTextPlugin.extract('style', ['css', 'postcss', 'sass']),
   });
 } else {
   loaders.push({
-    test: /\.scss$/,
+    test: /\.s?css$/,
     loaders: ['style', 'css', 'postcss', 'sass'],
   });
 }

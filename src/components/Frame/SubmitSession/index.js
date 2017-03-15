@@ -1,4 +1,5 @@
 import React from 'react';
+import 'react-widgets/lib/scss/react-widgets.scss';
 import { Formio } from 'react-formio';
 import Page from '../../Page';
 import Title from '../../Title';
