@@ -12,23 +12,7 @@
 
   input[type="text"],
   input[type="email"] {
-    font-size: 12px;
-    font-family: $f-base;
     background: transparent;
-    border: 1px solid $c-black;
-    border-radius: 2px;
-    color: $c-black;
-    padding: 15px;
-    margin-bottom: 10%;
-    width: 100%;
-
-    &::placeholder {
-      color: $c-black;
-    }
-
-    &:focus {
-      border-color: $c-blue;
-      outline: none;
-    }
+    margin: 0 0 10% 0;
   }
 }
