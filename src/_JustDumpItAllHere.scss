@@ -64,6 +64,26 @@ form[name="formioForm"] {
   }
 }
 
+// React-Widget Form Styles
+.rw-widget {
+  background-color: $c-dust-light;
+  border-color: $c-black;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $c-dust-light;
+    border-color: $c-black;
+  }
+
+  &.rw-state-focus {
+    border-color: $c-blue;
+
+    &:hover {
+      border-color: $c-blue;
+    }
+  }
+}
+
 // Common Screen Styles
 .pages {
   @extend .clearfix;
