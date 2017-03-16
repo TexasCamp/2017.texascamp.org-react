@@ -1,5 +1,8 @@
 import React from 'react';
+// Required for Form.io <select> components
 import 'react-widgets/lib/scss/react-widgets.scss';
+// Required for Form.io WYSIWYG
+import 'quill/dist/quill.snow.css';
 import { Formio } from 'react-formio';
 import Page from '../../Page';
 import Title from '../../Title';
