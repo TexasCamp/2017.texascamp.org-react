@@ -94,14 +94,37 @@ form[name="formioForm"] {
 // Common Page Styles
 .page {
   @include clearfix;
+  position: relative;
   min-height: 46vw;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.page.fixed-bg {
-  background-attachment: fixed;
+.page.light-bg {
+  .content--background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+  }
+
+  &.fixed-bg .content--background {
+    position: fixed;
+  }
+
+  &.fixed-bg.one-col .content--background {
+    top: $outer-frame-width;
+    max-height: 100 - ($outer-frame-width * 2);
+  }
+
+  h2,
+  .content--body,
+  .content--aside {
+    // Ensure content is shown above transparent background image
+    position: relative;
+  }
 }
 
 .page.one-col {
