@@ -1,15 +1,107 @@
 .sponsor-group {
+  //max-width: 467px;
+  display: inline-block;
+  width: 100%;
   padding: 0 44px;
-  border-left: 3px solid $c-dust-light;
+  //border-left: 3px solid $c-dust-light;
   position: relative;
+  //margin: 0 13.75%;  add padding to content--aside
 
   h3 {
     font-family: $f-heavy;
     font-size: 16px;
     position: absolute;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+}
+
+
+.sponsors--platinum {
+  h3 {
+    left: -2.25%;
+    transform-origin: 50% 200%;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
     bottom: 0;
     left: 0;
-    transform-origin: 0 0;
-    transform: rotate(-90deg);
+    height: 80%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
+  }
+}
+
+.sponsors--gold {
+  h3 {
+    left: -2.5%;
+    transform-origin: 50% 100%;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
+  }
+}
+
+.sponsors--silver {
+  h3 {
+    left: -5.75%;
+    transform-origin: 62% 100%;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
+  }
+}
+
+.sponsors--bronze {
+  h3 {
+    left: 2%;
+    transform-origin: 37% 200%;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
   }
 }
