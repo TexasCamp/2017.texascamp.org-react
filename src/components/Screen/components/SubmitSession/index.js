@@ -5,7 +5,7 @@ import SubmitSession from '../../../Frame/SubmitSession';
 
 function SubmitSessionScreen() {
   return (
-    <Screen name="home">
+    <Screen name="submitsession">
       <ScrollToTop />
       <SubmitSession />
     </Screen>

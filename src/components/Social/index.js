@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import twitter from './twitter.svg';
 import facebook from './facebook.svg';
 
 function Social() {
   return (
     <div id="social">
-      <Twitter /> &nbsp; <Facebook /> &nbsp; <CodeOfConduct />
+      <Twitter />
+      <Facebook />
+      <Link to="/code-of-conduct">Code of Conduct</Link>
     </div>
   );
 }
@@ -22,14 +25,6 @@ function Facebook() {
   return (
     <a href="https://www.facebook.com/DrupalCampTexas/" target="_blank">
       <img src={facebook} alt="facebook" />
-    </a>
-  );
-}
-
-function CodeOfConduct() {
-  return (
-    <a href="/">
-      Code of Conduct
     </a>
   );
 }
