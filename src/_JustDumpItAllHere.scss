@@ -1,0 +1,169 @@
+h1 {
+  @include text-heading;
+}
+
+h2 {
+  @include text-heading;
+}
+
+// Form Styles
+fieldset {
+  margin-bottom: 1.5em;
+
+  legend {
+    font-family: $f-heavy;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+  }
+}
+
+label {
+  margin: 0.5em 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 12px;
+  font-family: $f-base;
+  background: $c-dust-light;
+  border: 1px solid $c-black;
+  border-radius: 2px;
+  color: $c-black;
+  padding: 15px;
+  width: 100%;
+  margin: 0.5em 0;
+
+  &::placeholder {
+    color: $c-black;
+  }
+
+  &:focus {
+    border-color: $c-blue;
+    outline: none;
+  }
+}
+
+// Form.io Styles
+form[name="formioForm"] {
+  .alert {
+    margin-left: 20px;
+    margin-bottom: 1em;
+  }
+}
+
+.form-group {
+  &.has-error {
+    input {
+      border-color: $c-red;
+    }
+  }
+
+  .help-block {
+    margin-left: 20px;
+  }
+}
+
+// React-Widget Form Styles
+.rw-widget {
+  background-color: $c-dust-light;
+  border-color: $c-black;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $c-dust-light;
+    border-color: $c-black;
+  }
+
+  &.rw-state-focus {
+    border-color: $c-blue;
+
+    &:hover {
+      border-color: $c-blue;
+    }
+  }
+}
+
+// Common Screen Styles
+.pages {
+  @extend .clearfix;
+  margin: $outer-frame-width;
+  background-color: #e3dcd6;
+}
+
+// Common Page Styles
+.page {
+  @include clearfix;
+  position: relative;
+  min-height: 46vw;
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page.light-bg {
+  .content--background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+  }
+
+  &.fixed-bg .content--background {
+    position: fixed;
+  }
+
+  &.fixed-bg.one-col .content--background {
+    top: $outer-frame-width;
+    max-height: 100 - ($outer-frame-width * 2);
+  }
+
+  h2,
+  .content--body,
+  .content--aside {
+    // Ensure content is shown above transparent background image
+    position: relative;
+  }
+}
+
+.page.one-col {
+  @include add-grid(12);
+  @include add-gutter(1/3);
+  padding-top: 8vw;
+  padding-bottom: 4vw;
+
+  h2 {
+    @include grid-span(8,2);
+    clear: both;
+  }
+
+  .content--body {
+    @include grid-span(8,2);
+    clear: both;
+  }
+}
+
+.page.two-col {
+  @include add-grid(12);
+  @include add-gutter(1/3);
+  padding-top: 10vw;
+  padding-bottom: 4vw;
+
+  h2 {
+    @include grid-span(5,2);
+    clear: both;
+  }
+
+  .content--body {
+    @include grid-span(5,2);
+    clear: both;
+  }
+
+  .content--aside {
+    @include grid-span(6,7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import Skeleton from '../Skeleton';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import fancyMapStyles from './fancyMapStyles.json';
+import Page from '../../Page';
+import Title from '../../Title';
 
 /*
  * Sample From: https://developers.google.com/maps/documentation/javascript/examples/map-simple
@@ -47,24 +48,21 @@ class Venue extends React.Component {
 
   render() {
     return (
-      <div name="venue" id="venue" className="venue">
-        <Skeleton
-          class="venue"
-          title="In a pickle"
-          body="How to get to TexasCamp 2017"
-          rightElement={
-            <StyledMapExampleGoogleMap
-              containerElement={
-                <div id="google-map" />
-              }
-              mapElement={
-                <div style={{ height: '100%' }} />
-              }
-              markers={this.state.markers}
-            />
+      <Page name="venue">
+        <section className="content--venue">
+          <Title level="h2" title="In a pickle" />
+          <p>How to get to TexasCamp 2017</p>
+        </section>
+        <StyledMapExampleGoogleMap
+          containerElement={
+            <div id="google-map" />
           }
+          mapElement={
+            <div style={{ height: '100%' }} />
+          }
+          markers={this.state.markers}
         />
-      </div>
+      </Page>
     );
   }
 }

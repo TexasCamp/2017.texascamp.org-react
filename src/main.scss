@@ -32,6 +32,15 @@ $bp-medium:        min-width 980px;
 $bp-wide:          min-width 1080px;
 $bp-portrait:      orientation portrait;
 
+// Singularity GS
+$include-clearfix: true;
+
+// MISC
+$outer-frame-width: 7.8vh;
+
+@import "./reset.scss";
+@import "./helpers.scss";
+
 // Set up basic colors and typefaces
 html {
   font-size: $base-font-size;
@@ -45,25 +54,22 @@ body {
 }
 
 // Import partials
-@import "./reset.scss";
-@import "./helpers.scss";
-
+@import "./JustDumpItAllHere.scss";
 @import "./components/App/app.scss";
 @import "./components/Button/button.scss";
-@import "./components/Frame/Skeleton/skeleton.scss";
-@import "./components/Frame/Skeleton/Title/_title.scss";
-@import "./components/Frame/Skeleton/Image/_image.scss";
-@import "./components/Frame/Skeleton/Body/_body.scss";
-@import "./components/Frame/Skeleton/Background/_background.scss";
 @import "./components/Menu/menu.scss";
-@import "./components/Header/header.scss";
+@import "./components/CampInfo/campinfo.scss";
 @import "./components/Frame/Start/start.scss";
 @import "./components/Frame/About/about.scss";
 @import "./components/Frame/News/news.scss";
 @import "./components/Frame/Sessions/sessions.scss";
+@import "./components/Frame/SubmitSession/submitsession.scss";
 @import "./components/Frame/Sponsors/sponsors.scss";
+@import "./components/Frame/Sponsors/Components/SponsorGroup/sponsorgroup.scss";
+@import "./components/Frame/Sponsors/Components/Sponsor/sponsor.scss";
 @import "./components/Frame/Tickets/tickets.scss";
 @import "./components/Frame/Venue/venue.scss";
 @import "./components/Frame/Finish/finish.scss";
 @import "./components/Social/social.scss";
 @import "./components/Footer/footer.scss";
+@import "./components/SplashOfColor/splashofcolor.scss";

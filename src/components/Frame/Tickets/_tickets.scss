@@ -1,9 +1,10 @@
-.tickets {
-  .background-image {
-    opacity: 0.2;
+.page--tickets {
+  .content--aside {
+    position: relative;
   }
 
   .button--primary {
+    position: absolute;
     bottom: 9%;
   }
 

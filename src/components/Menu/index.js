@@ -18,10 +18,10 @@ class Menu extends React.Component {
     scroll.scrollMore(100);
   }
   render() {
-    let offset = -50;
+    let offset = -55;
 
     return (
-      <nav id="menu">
+      <nav className="menu menu--main">
         <ul>
           <li>
             <Link

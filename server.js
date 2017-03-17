@@ -10,6 +10,11 @@ var publicPath = path.resolve(__dirname, 'build');
 // We point to our static assets
 app.use(express.static(publicPath));
 
+// Redirect all non-static requests to our app
+app.get('/*', function(req, res){
+  res.sendFile(publicPath + '/index.html');
+});
+
 // And run the server
 app.listen(port, function () {
   console.log('Server running on port ' + port);

@@ -1,22 +1,15 @@
-$outer-frame-width: 7.5vh;
+p {
+  margin-bottom: 1em;
+}
 
 #app {
-  margin: $outer-frame-width 0 0 0;
   position: relative;
   z-index: 1;
-
-  &::-webkit-scrollbar{
-    display: none;
-  }
-
-  @include breakpoint($bp-narrow) {
-    margin: $outer-frame-width;
-  }
 }
 
 
-#top,
-#bottom {
+.header--page,
+.footer--page {
   @extend .clearfix;
   height: $outer-frame-width;
   width: 100%;
@@ -26,26 +19,16 @@ $outer-frame-width: 7.5vh;
   background-color: $c-dust-light;
 }
 
-#top {
+.header--page {
   position: fixed;
   top: 0;
   left: 0;
 }
 
-#bottom {
+.footer--page {
   @include breakpoint($bp-narrow) {
     position: fixed;
     bottom: 0;
     left: 0;
-  }
-}
-
-#middle {
-  @extend .clearfix;
-  margin-top: $outer-frame-width;
-  background-color: #e3dcd6;
-
-  @include breakpoint($bp-narrow) {
-    margin-bottom: $outer-frame-width;
   }
 }

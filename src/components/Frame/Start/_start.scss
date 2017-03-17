@@ -1,29 +1,29 @@
-#start {
+.page--start {
   position: relative;
-  //margin-top: 7vh;
+  background-size: cover;
 
   h1 {
     position: absolute;
-    top: 6%;
+    top: 15%;
     left: 0;
     width: 100%;
     text-align: center;
     font-size: 16px;
   }
 
-  #logo {
+  .logo {
     position: absolute;
-    top: 21%;
-    left: 31%;
-    width: 37%;
     text-align: center;
+    width: 37%;
   }
 
-  #logo-outline {
-    position: absolute;
+  .logo--infill {
+    top: 21%;
+    left: 31%;
+  }
+
+  .logo--outline {
     top: 20.5%;
     left: 30.5%;
-    width: 37%;
-    text-align: center;
   }
 }

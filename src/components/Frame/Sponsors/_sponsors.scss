@@ -1,5 +1,14 @@
-.sponsors {
-  img {
-    opacity: 1;
+.page--sponsors {
+  position: relative;
+
+  &.two-col {
+    padding-top: 5vw;
+  }
+
+
+  .content--prospectus {
+    position: absolute;
+    left: 22.5%;
+    top: 19.8%;
   }
 }
