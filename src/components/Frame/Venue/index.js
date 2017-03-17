@@ -13,7 +13,9 @@ const StyledMapExampleGoogleMap = withGoogleMap(props => (
     defaultCenter={{ lat: 30.407760, lng: -97.798158 }}
     defaultOptions={{
       styles: fancyMapStyles,
+      zoomControl: true,
       scrollwheel: false,
+      draggable: true,
     }}
   >
     {props.markers.map(marker => (
@@ -53,15 +55,17 @@ class Venue extends React.Component {
           <Title level="h2" title="In a pickle" />
           <p>How to get to TexasCamp 2017</p>
         </section>
-        <StyledMapExampleGoogleMap
-          containerElement={
-            <div id="google-map" />
-          }
-          mapElement={
-            <div style={{ height: '100%' }} />
-          }
-          markers={this.state.markers}
-        />
+        <section className="map--venue">
+          <StyledMapExampleGoogleMap
+            containerElement={
+              <div id="google-map" />
+            }
+            mapElement={
+              <div style={{ height: '100%' }} />
+            }
+            markers={this.state.markers}
+          />
+        </section>
       </Page>
     );
   }

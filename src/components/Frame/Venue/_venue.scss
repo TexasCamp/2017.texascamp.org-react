@@ -1,23 +1,26 @@
-.page--venue {
-
-}
-
-.skeleton__venue--left {
+.content--venue {
   background-color: $c-dust-light;
   height: auto;
   width: auto;
-  min-width: 31em;
-  margin: 3em 0 0 5em;
+  position: absolute;
+  top: 4em;
+  left: 4em;
+  z-index: 10;
+  padding: 4em;
 }
 
-.skeleton__venue--right {
-  margin-left: -123%;
-  width: 223%;
-  height: 100%;
-  z-index: -10;
+.map--venue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46vw;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
 }
 
 #google-map {
   width: 100%;
-  height: 100%;
+  height: 46vw;
 }
