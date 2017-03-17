@@ -43,7 +43,7 @@ function Sessions() {
         <p>The Texas Camp Code of Conduct is based on the MidCamp Code of
         Conduct, which is licensed under a&nbsp;
           <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative
-          Commons Attribution 3.0 Unported License</a>
+          Commons Attribution 3.0 Unported License</a>&nbsp;
         and is available for others
         to use and adapt for their own events.</p>
       </Content>
