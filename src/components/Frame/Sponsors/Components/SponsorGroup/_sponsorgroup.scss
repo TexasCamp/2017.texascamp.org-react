@@ -2,7 +2,7 @@
   //max-width: 467px;
   display: inline-block;
   width: 100%;
-  padding: 0 44px;
+  //padding: 0 9.5%;
   //border-left: 3px solid $c-dust-light;
   position: relative;
   //margin: 0 13.75%;  add padding to content--aside
@@ -10,66 +10,33 @@
   h3 {
     font-family: $f-heavy;
     font-size: 16px;
-    position: absolute;
-    top: 0;
+    //position: absolute;
+    position: relative;
+    left: -100%;
     transform: rotate(-90deg);
+    transform-origin: 100% 50%;
   }
 
+}
+
+.sponsor-group__title-wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.sponsor-group__sponsors-wrapper {
+  padding: 0 44px;
 }
 
 
 .sponsors--platinum {
   h3 {
-    left: -2.25%;
-    transform-origin: 50% 200%;
+    //left: -9.5%;
+    //transform-origin: 0 0;
   }
 
   img {
     max-width: 60%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 80%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
-}
-
-.sponsors--gold {
-  h3 {
-    left: -2.5%;
-    transform-origin: 50% 100%;
-  }
-
-  img {
-    max-width: 50%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 60%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
-}
-
-.sponsors--silver {
-  h3 {
-    left: -5.75%;
-    transform-origin: 62% 100%;
-  }
-
-  img {
-    max-width: 50%;
   }
 
   &:before {
@@ -84,14 +51,14 @@
   }
 }
 
-.sponsors--bronze {
+.sponsors--gold {
   h3 {
-    left: 2%;
-    transform-origin: 37% 200%;
+    //left: -2.5%;
+    //transform-origin: 50% 100%;
   }
 
   img {
-    max-width: 60%;
+    max-width: 50%;
   }
 
   &:before {
@@ -99,7 +66,77 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 80%;
+    height: 50%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
+  }
+}
+
+.sponsors--silver {
+  h3 {
+    //left: -5.75%;
+    //transform-origin: 62% 100%;
+  }
+
+  img {
+    max-width: 50%;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 72%;
+    width: 100%;
+    border-left: 3px solid $c-dust-light;
+    margin-bottom: 30px;
+  }
+
+  .sponsor:nth-child(odd) {
+    width: 46%;
+    float: left;
+  }
+
+  .sponsor:nth-child(even) {
+    width: 46%;
+    float: right;
+  }
+
+  .sponsor {
+    height: 5vw;
+  }
+
+}
+
+.sponsors--bronze {
+  h3 {
+    //left: 2%;
+    //transform-origin: 37% 200%;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  .sponsor {
+    width: 33%;
+    float: left;
+    height: 5vw;
+  }
+
+  //.sponsor:nth-child(even) {
+  //  width: 33%;
+  //  float: right;
+  //}
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 78%;
     width: 100%;
     border-left: 3px solid $c-dust-light;
     margin-bottom: 30px;

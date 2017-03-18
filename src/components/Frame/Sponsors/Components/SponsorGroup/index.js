@@ -3,8 +3,12 @@ import React from 'react';
 function Sponsor(props) {
   return (
     <section className={`sponsor-group sponsors--${props.name.toLowerCase()}`}>
-      <h3>{props.name}</h3>
-      {props.sponsors}
+      <div className="sponsor-group__title-wrapper">
+        <h3>{props.name}</h3>
+      </div>
+      <div className="sponsor-group__sponsors-wrapper">
+        {props.sponsors}
+      </div>
     </section>
   );
 }
