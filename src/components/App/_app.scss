@@ -7,16 +7,21 @@ p {
   z-index: 1;
 }
 
-
 .header--page,
 .footer--page {
   @extend .clearfix;
   height: $outer-frame-width;
+  min-height: $header-footer-min-height;
   width: 100%;
   margin: 0;
   padding: 0 $outer-frame-width;
   z-index: 10;
   background-color: $c-dust-light;
+
+  @include breakpoint($bp-frame-break) {
+    padding: 0 20px;
+    height: $header-footer-min-height;
+  }
 }
 
 .header--page {
@@ -26,9 +31,11 @@ p {
 }
 
 .footer--page {
-  @include breakpoint($bp-narrow) {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  @include breakpoint($bp-frame-break) {
+    position: relative;
   }
 }

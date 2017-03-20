@@ -25,11 +25,10 @@ $f-script: "calder-script", sans-serif;
 $base-font-size: 16px;
 
 // Setup Breakpoints
-$bp-handheld-only: max-width 679px;
-$bp-narrow:        min-width 680px;
-$bp-medium:        min-width 980px;
-$bp-wide:          min-width 1080px;
+$bp-wide: min-width 1440px;
+$bp-frame-break: max-width 768px;
 $bp-portrait:      orientation portrait;
+// $bp-phone:;
 
 // Susy GS
 $susy: (
@@ -38,6 +37,7 @@ $susy: (
 
 // MISC
 $outer-frame-width: 7.8vh;
+$header-footer-min-height: 50px;
 
 @import "./reset.scss";
 @import "./helpers.scss";

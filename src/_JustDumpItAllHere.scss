@@ -89,6 +89,11 @@ form[name="formioForm"] {
   @extend .clearfix;
   margin: $outer-frame-width;
   background-color: #e3dcd6;
+
+  @include breakpoint($bp-frame-break) {
+    margin: 0;
+    margin-top: $header-footer-min-height;
+  }
 }
 
 // Common Page Styles
