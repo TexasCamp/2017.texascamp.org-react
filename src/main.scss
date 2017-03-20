@@ -1,5 +1,5 @@
 @import "~breakpoint-sass/stylesheets/breakpoint";
-@import "~singularitygs/stylesheets/singularitygs";
+@import "~susy/sass/susy";
 @import "~sass-toolkit/stylesheets/toolkit/kickstart";
 @import "~compass-mixins/lib/compass/css3";
 
@@ -24,7 +24,6 @@ $f-script: "calder-script", sans-serif;
 // Font Size
 $base-font-size: 16px;
 
-
 // Setup Breakpoints
 $bp-handheld-only: max-width 679px;
 $bp-narrow:        min-width 680px;
@@ -32,8 +31,10 @@ $bp-medium:        min-width 980px;
 $bp-wide:          min-width 1080px;
 $bp-portrait:      orientation portrait;
 
-// Singularity GS
-$include-clearfix: true;
+// Susy GS
+$susy: (
+  columns: 24,
+);
 
 // MISC
 $outer-frame-width: 7.8vh;

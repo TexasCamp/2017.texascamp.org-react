@@ -52,8 +52,8 @@
     "file-loader": "^0.9.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-google-maps": "^6.0.1",
     "react-formio": "^1.0.1",
+    "react-google-maps": "^6.0.1",
     "react-redux": "^4.4.5",
     "react-router-dom": "^4.0.0",
     "react-scroll": "^1.4.7",
@@ -61,7 +61,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "sass-toolkit": "^2.10.0",
-    "singularitygs": "^1.7.0"
+    "susy": "^2.2.12"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.5.2",
