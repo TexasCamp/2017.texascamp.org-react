@@ -11,11 +11,11 @@ function NewsletterForm() {
       >
         <div className="mc-field-group">
           <label htmlFor="mce-NAME" className="visuallyhidden">Name</label>
-          <input type="text" name="NAME" placeholder="Name" />
+          <input type="text" name="NAME" placeholder="Name" className="imperfect--one" />
         </div>
         <div className="mc-field-group">
           <label htmlFor="mce-EMAIL" className="visuallyhidden">Email address</label>
-          <input type="email" name="EMAIL" placeholder="Email address" />
+          <input type="email" name="EMAIL" placeholder="Email address" className="imperfect--two" />
         </div>
         <div className="clear">
           <div className="response" style={{ display: 'none' }}></div>
