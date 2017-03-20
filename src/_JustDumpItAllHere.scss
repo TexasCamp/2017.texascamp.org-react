@@ -133,39 +133,40 @@ form[name="formioForm"] {
 }
 
 .page.one-col {
-  @include container;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
   padding-top: 8vw;
   padding-bottom: 4vw;
 
   h2 {
-    @include span(16);
-    @include prefix(2);
+    grid-column: 3 / 16;
   }
 
   .content--body {
-    @include span(16);
-    @include prefix(2);
+    grid-column: 3 / 16;
   }
 }
 
 .page.two-col {
-  @include container;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
   padding-top: 6vw;
   padding-bottom: 4vw;
 
   h2 {
-    @include span(12);
-    @include prefix(2);
+    grid-column: 3 / span 10;
+    grid-row: 1 / 2;
     padding-top: 4vw;
   }
 
   .content--body {
-    @include span(12);
-    @include prefix(2);
+    grid-column: 3 / span 10;
+    grid-row: 2 / 2;
   }
 
   .content--aside {
-    @include span(11 at 14);
+    grid-column: 15/ span 10;
+    grid-row: 1 / span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
