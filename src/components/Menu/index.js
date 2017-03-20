@@ -1,117 +1,18 @@
 import React from 'react';
-import { Link, scroll, scrollSpy } from 'react-scroll';
+import MenuScroll from '../MenuScroll';
+import MenuRouter from '../MenuRouter';
 
-class Menu extends React.Component {
-  componentDidMount() {
-    scrollSpy.update();
-  }
-  scrollToTop() {
-    scroll.scrollToTop();
-  }
-  scrollToBottom() {
-    scroll.scrollToBottom();
-  }
-  scrollTo() {
-    scroll.scrollTo(100);
-  }
-  scrollMore() {
-    scroll.scrollMore(100);
-  }
-  render() {
-    let offset = -55;
+function Menu(props) {
+  const { location } = props;
+  const Component = location.pathname === '/' ? MenuScroll : MenuRouter;
 
-    return (
-      <nav className="menu menu--main">
-        <ul>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              to="about"
-              onSetActive={this.handleSetActive}
-              isDynamic={Boolean(true)}
-              spy
-              smooth
-              duration={500}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              isDynamic={Boolean(true)}
-              to="tickets"
-              onSetActive={this.handleSetActive}
-              spy
-              smooth
-              duration={500}
-            >
-              Tickets
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              isDynamic={Boolean(true)}
-              to="sessions"
-              onSetActive={this.handleSetActive}
-              spy
-              smooth
-              duration={500}
-            >
-              Sessions
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              isDynamic={Boolean(true)}
-              to="sponsors"
-              onSetActive={this.handleSetActive}
-              spy
-              smooth
-              duration={500}
-            >
-              Sponsors
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              isDynamic={Boolean(true)}
-              to="venue"
-              onSetActive={this.handleSetActive}
-              spy
-              smooth
-              duration={500}
-            >
-              Venue
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="menu__item"
-              offset={offset}
-              isDynamic={Boolean(true)}
-              to="news"
-              onSetActive={this.handleSetActive}
-              spy
-              smooth
-              duration={500}
-            >
-              News
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    );
-  }
+  return (
+    <Component />
+  );
 }
 
+Menu.propTypes = {
+  location: React.PropTypes.object.isRequired,
+};
 
 export default Menu;
