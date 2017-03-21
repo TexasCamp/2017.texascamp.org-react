@@ -9,7 +9,7 @@ import amazeeLogo from './logos/amazee-labs.png';
 import fourkitchensLogo from './logos/four-kitchens.png';
 import pantheonLogo from './logos/pantheon.png';
 import kanopiLogo from './logos/kanopi-studios.png';
-import acquiaLogo from './logos/todo.png';
+import acquiaLogo from './logos/acquia.png';
 import softescuLogo from './logos/softescu.png';
 import texascreativeLogo from './logos/texas-creative.png';
 
