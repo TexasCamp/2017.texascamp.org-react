@@ -1,16 +1,17 @@
 .sponsor-group {
   border-left: 3px solid $c-dust-golden;
   display: flex;
-  margin: 0 7rem 4.5rem 4rem;
+  margin: 0 8vw 4.5rem 4rem;
 }
 
 .sponsor-group__title {
   align-self: flex-start;
   background: $c-dust;
+  box-shadow: 0 11px 6px 4px $c-dust;
   font-family: $f-heavy;
   font-size: 1rem;
   left: -0.9em;
-  margin-right: 1em;
+  margin-right: 1.2em;
   padding-top: 1.5em;
   position: relative;
   text-align: right;
@@ -20,4 +21,20 @@
 
 .sponsor-group__sponsors {
   width: 100%;
+}
+
+// Modifiers
+.sponsor-group--silver,
+.sponsor-group--bronze {
+  .sponsor-group__sponsors {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+.sponsor-group--bronze {
+  .sponsor-group__sponsors {
+    background: $c-dust-golden;
+    box-shadow: 0 40px 30px -30px rgba($c-black, .1);
+  }
 }

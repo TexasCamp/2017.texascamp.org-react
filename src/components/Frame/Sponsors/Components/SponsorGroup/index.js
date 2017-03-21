@@ -3,7 +3,7 @@ import Sponsor from '../Sponsor';
 
 function SponsorGroup(props) {
   return (
-    <section className={`sponsor-group sponsors--${props.name.toLowerCase()}`}>
+    <section className={`sponsor-group sponsor-group--${props.name.toLowerCase()}`}>
       <h3 className="sponsor-group__title">
         {props.name}
       </h3>
