@@ -5,10 +5,13 @@
     padding-top: 5vw;
   }
 
-
   .content--prospectus {
     position: absolute;
     left: 22.5%;
     top: 19.8%;
+  }
+
+  .content--aside {
+    align-items: stretch !important; // override default
   }
 }

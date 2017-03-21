@@ -4,10 +4,10 @@ import Sponsor from '../Sponsor';
 function SponsorGroup(props) {
   return (
     <section className={`sponsor-group sponsors--${props.name.toLowerCase()}`}>
-      <div className="sponsor-group__title-wrapper">
-        <h3>{props.name}</h3>
-      </div>
-      <div className="sponsor-group__sponsors-wrapper">
+      <h3 className="sponsor-group__title">
+        {props.name}
+      </h3>
+      <div className="sponsor-group__sponsors">
         {props.sponsors.map(sponsor =>
           <Sponsor
             key={sponsor.name}

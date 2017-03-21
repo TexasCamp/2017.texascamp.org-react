@@ -1,144 +1,23 @@
 .sponsor-group {
-  //max-width: 467px;
-  display: inline-block;
-  width: 100%;
-  //padding: 0 9.5%;
-  //border-left: 3px solid $c-dust-light;
+  border-left: 3px solid $c-dust-golden;
+  display: flex;
+  margin: 0 7rem 4.5rem 4rem;
+}
+
+.sponsor-group__title {
+  align-self: flex-start;
+  background: $c-dust;
+  font-family: $f-heavy;
+  font-size: 1rem;
+  left: -0.9em;
+  margin-right: 1em;
+  padding-top: 1.5em;
   position: relative;
-  //margin: 0 13.75%;  add padding to content--aside
-
-  h3 {
-    font-family: $f-heavy;
-    font-size: 16px;
-    //position: absolute;
-    position: relative;
-    left: -100%;
-    transform: rotate(-90deg);
-    transform-origin: 100% 50%;
-  }
-
+  text-align: right;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
 }
 
-.sponsor-group__title-wrapper {
-  position: absolute;
-  top: 0;
-}
-
-.sponsor-group__sponsors-wrapper {
-  padding: 0 44px;
-}
-
-
-.sponsors--platinum {
-  h3 {
-    //left: -9.5%;
-    //transform-origin: 0 0;
-  }
-
-  img {
-    max-width: 60%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 75%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
-}
-
-.sponsors--gold {
-  h3 {
-    //left: -2.5%;
-    //transform-origin: 50% 100%;
-  }
-
-  img {
-    max-width: 50%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
-}
-
-.sponsors--silver {
-  h3 {
-    //left: -5.75%;
-    //transform-origin: 62% 100%;
-  }
-
-  img {
-    max-width: 50%;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 72%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
-
-  .sponsor:nth-child(odd) {
-    width: 46%;
-    float: left;
-  }
-
-  .sponsor:nth-child(even) {
-    width: 46%;
-    float: right;
-  }
-
-  .sponsor {
-    height: 5vw;
-  }
-
-}
-
-.sponsors--bronze {
-  h3 {
-    //left: 2%;
-    //transform-origin: 37% 200%;
-  }
-
-  img {
-    max-width: 60%;
-  }
-
-  .sponsor {
-    width: 33%;
-    float: left;
-    height: 5vw;
-  }
-
-  //.sponsor:nth-child(even) {
-  //  width: 33%;
-  //  float: right;
-  //}
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 78%;
-    width: 100%;
-    border-left: 3px solid $c-dust-light;
-    margin-bottom: 30px;
-  }
+.sponsor-group__sponsors {
+  width: 100%;
 }
