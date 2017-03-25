@@ -9,6 +9,10 @@
   padding: 4em;
 }
 
+.venue__text {
+  @include text-long;
+}
+
 .map--venue {
   position: absolute;
   top: 0;

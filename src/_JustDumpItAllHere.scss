@@ -104,6 +104,10 @@ form[name="formioForm"] {
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
+
+  .content--body {
+    @include text-long;
+  }
 }
 
 .page.light-bg {

@@ -132,3 +132,17 @@
   font-size: $font-size;
   line-height: 1.5;
 }
+
+@mixin text-long {
+  a {
+    border-bottom: 1px solid $c-yellow;
+    box-shadow: inset 0 -4px 0 $c-yellow;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.3s ease-out;
+  }
+  a:focus,
+  a:hover {
+    background: $c-yellow;
+  }
+}

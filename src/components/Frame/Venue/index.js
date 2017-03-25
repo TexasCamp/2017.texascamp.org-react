@@ -53,7 +53,11 @@ class Venue extends React.Component {
       <Page name="venue">
         <section className="content--venue">
           <Title level="h2" title="In a pickle" />
-          <p>How to get to TexasCamp 2017</p>
+          <p className="venue__text">We’re worked up about our venue this year!
+            We’re headed to the <a href="https://goo.gl/maps/qoMNPrMX9CG2">UT
+            JJ Pickle Research Campus</a> in North Austin.
+            You’ll find great places to eat, drink and explore right quick.
+          </p>
         </section>
         <section className="map--venue">
           <StyledMapExampleGoogleMap
