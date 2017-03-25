@@ -98,7 +98,7 @@
   -ms-interpolation-mode: bicubic;
 }
 
-@mixin button($bg: $c-red, $padding: 8px 27px) {
+@mixin button($bg: $c-red, $padding: 3px 27px) {
   background-color: $bg;
   border: 0;
   border-radius: 20px;
