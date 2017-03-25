@@ -4,14 +4,15 @@ import drupalicon from './drupalicon-header.svg';
 function CampInfo() {
   return (
     <section className="camp-info">
-      <Drupalicon /> Texas Camp &middot; June 2-4, 2017, Austin, TX
+      <Drupalicon />
+      <p>Texas Camp &middot; June 2-4, 2017, Austin, TX</p>
     </section>
   );
 }
 
 function Drupalicon() {
   return (
-    <a href="/">
+    <a className="drupalicon" href="/">
       <img src={drupalicon} alt="drupal icon" />
     </a>
   );

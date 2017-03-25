@@ -1,5 +1,7 @@
 .camp-info {
   @include text-small;
+  align-items: center;
+  display: flex;
   float: left;
   position: relative;
   top: 50%;
@@ -7,7 +9,15 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.drupalicon {
+  margin-right: 0.8em;
   img {
+    display: block;
     height: 1em;
     width: 1em;
   }
