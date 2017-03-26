@@ -27,7 +27,7 @@ class Venue extends React.Component {
             We’re worked up about our venue this year!
             We’re headed to the
             {" "}
-            <a href="https://goo.gl/maps/qoMNPrMX9CG2">UT JJ Pickle Research Campus</a>
+            <a href="https://goo.gl/maps/qoMNPrMX9CG2" target="_blank">UT JJ Pickle Research Campus</a>
             {" "}
             in North Austin.
             You’ll find great places to eat, drink and explore right quick.
