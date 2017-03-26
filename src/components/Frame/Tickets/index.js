@@ -10,10 +10,12 @@ function Tickets() {
   return (
     <Page name="tickets" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="While the gettin's good" />
-      <Content classes={['content--aside']}>
-        <img src={ticket} alt="register ticket" width="375" />
-        <Button link="https://texas-camp-2017.eventbrite.com" text="Register" />
-      </Content>
+      <a href="https://texas-camp-2017.eventbrite.com" target="_blank">
+        <Content classes={['content--aside']}>
+          <img src={ticket} alt="register ticket" width="375" />
+          <Button link="https://texas-camp-2017.eventbrite.com" text="Register" />
+        </Content>
+      </a>
       <Content classes={['content--body']}>
         <p>
           Y’all fixin’ to make your way to Austin? Get your tickets right
