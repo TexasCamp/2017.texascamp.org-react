@@ -4,6 +4,7 @@ import Page from '../../Page';
 import Content from '../../Content';
 import SponsorGroup from './Components/SponsorGroup';
 import background from './sponsors-bg.jpg';
+import trailer from './thank-you-trailer.png';
 import rackspaceLogo from './logos/rackspace.png';
 import amazeeLogo from './logos/amazee-labs.png';
 import fourkitchensLogo from './logos/four-kitchens.png';
@@ -85,11 +86,14 @@ function Sponsors() {
 
   return (
     <Page name="sponsors" background={background} classes={['two-col']}>
-      <Content classes={['content--prospectus']}>
-        <Button
-          link="//2017.texascamp.org/sites/default/files/texas-camp-sponsor-prospectus.pdf"
-          text="Download Prospectus"
-        />
+      <Content classes={['content--body']}>
+        <img src={trailer} alt="thank you trailer" className="content--trailer" />
+        <div className={['content--prospectus']}>
+          <Button
+            link="//2017.texascamp.org/sites/default/files/texas-camp-sponsor-prospectus.pdf"
+            text="Download Prospectus"
+          />
+        </div>
       </Content>
       <Content classes={['content--aside']}>
         {sponsors.map(sponsor =>

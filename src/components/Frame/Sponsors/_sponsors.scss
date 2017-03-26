@@ -5,10 +5,28 @@
     padding-top: 5vw;
   }
 
+  .content--trailer {
+    margin: 5vw 0 5vw -8vw;
+    width: 60vw;
+    max-width: 60vw;
+  }
+
   .content--prospectus {
     position: absolute;
-    left: 22.5%;
-    top: 19.8%;
+    left: 7vw;
+    top: 26vw;
+
+    @include breakpoint($bp-frame-desktop) {
+      left: 14vw;
+    }
+
+    @include breakpoint(min-width 1050px) {
+      left: 19vw;
+    }
+
+    @include breakpoint(min-width 1400px) {
+      left: 22vw;
+    }
   }
 
   .content--aside {
