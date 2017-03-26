@@ -17,6 +17,12 @@ plugins.push(new HtmlWebpackPlugin({
   filename: 'index.html',
 }));
 
+plugins.push(new HtmlWebpackPlugin({
+  template: THEME_DIR + 'public/humans.txt',
+  inject: false,
+  filename: 'humans.txt',
+}));
+
 if (NODE_ENV === 'production') {
   // plugins.push(new FaviconsWebpackPlugin({
   //   logo: THEME_DIR + 'public/favicon.ico',

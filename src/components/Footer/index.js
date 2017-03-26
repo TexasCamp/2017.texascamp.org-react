@@ -7,7 +7,10 @@ function Footer() {
       {" "}
       <a href="https://www.amazee.io/" target="_blank">amazee.io</a>
       .
-      Site by Amazee Labs.
+      Site by these
+      {" "}
+      <a href="humans.txt" target="_blank">humans</a>
+      .
       Drupal is a registered trademark of Dries Buytaert.
     </div>
   );
