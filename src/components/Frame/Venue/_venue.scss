@@ -1,10 +1,14 @@
 .page--venue {
-  .content--aside {
-    position: relative;
-  }
-
   .button--primary {
     position: absolute;
     bottom: 11%;
+  }
+
+  @include breakpoint($bp-frame-break) {
+    .button--primary {
+      margin: auto;
+      width: 50%;
+      left: 22vw;
+    }
   }
 }

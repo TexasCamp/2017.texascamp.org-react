@@ -28,6 +28,7 @@ $base-font-size: 16px;
 // Setup Breakpoints
 $bp-wide: min-width 1440px;
 $bp-frame-break: max-width 768px;
+$bp-frame-desktop: min-width 768px;
 $bp-portrait:      orientation portrait;
 // $bp-phone:;
 
@@ -37,7 +38,7 @@ $susy: (
 );
 
 // MISC
-$outer-frame-width: 7.8vh;
+$outer-frame-width: 5vh;
 $header-footer-min-height: 50px;
 
 @import "./reset.scss";

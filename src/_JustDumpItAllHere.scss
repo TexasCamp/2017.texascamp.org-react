@@ -154,24 +154,43 @@ form[name="formioForm"] {
 
 .page.two-col {
   @include container;
-  padding-top: 6vw;
-  padding-bottom: 4vw;
+  padding: 6vw 5vw 4vw 5vw;
+
+  @include breakpoint ($bp-frame-desktop) {
+    padding: 6vw 0 4vw 0;
+  }
 
   h2 {
-    @include span(12);
-    @include prefix(2);
     padding-top: 4vw;
   }
 
-  .content--body {
-    @include span(12);
-    @include prefix(2);
+  .content--aside {
+    align-items: center;
+
+    @include breakpoint($bp-frame-break) {
+      img {
+        margin: auto;
+        width: 75%;
+        display: block;
+      }
+    }
   }
 
-  .content--aside {
-    @include span(11 at 14);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include breakpoint($bp-frame-desktop) {
+    h2 {
+      @include span(12);
+      @include prefix(2);
+    }
+
+    .content--body {
+      @include span(12);
+      @include prefix(2);
+    }
+
+    .content--aside {
+      @include span(11 at 14);
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
