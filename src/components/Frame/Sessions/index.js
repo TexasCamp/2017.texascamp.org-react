@@ -10,10 +10,12 @@ function Sessions() {
   return (
     <Page name="sessions" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="Step right up" />
-      <Content classes={['content--aside']}>
-        <img src={wanted} alt="submit a session" width="411" />
-        <Link to="/submit-session" className="button--primary">Submit a session</Link>
-      </Content>
+      <a href="/submit-session">
+        <Content classes={['content--aside']}>
+          <img src={wanted} alt="submit a session" width="411" />
+          <Link to="/submit-session" className="button--primary">Submit a session</Link>
+        </Content>
+      </a>
       <Content classes={['content--body']}>
         <p>
           You have an idea?
