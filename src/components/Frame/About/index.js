@@ -9,10 +9,12 @@ function About() {
     <Page name="about" background={background} classes={['two-col']}>
       <Title level="h2" title="Three days in a two-step town" />
       <Content classes={['content--body']}>
-        <p>Texas Camp is a Drupal Conference for the people, an annual celebration
-        of open-source software in the Lone Star State. Join us the June 2-4 for
-        three days of talks, trainings, summits, sprints and socials with some of
-        the brightest minds from all over the world.</p>
+        <p>
+          Texas Camp is a homegrown event with the purpose of bringing the
+          large Texas Drupal community together to get to know each other,
+          share projects and ideas, and help newcomers find their way in the
+          wide open frontier of the Drupal world.
+        </p>
       </Content>
     </Page>
   );

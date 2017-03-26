@@ -25,7 +25,11 @@ class Venue extends React.Component {
         <Content classes={['content--body']}>
           <p>
             We’re worked up about our venue this year!
-            We’re headed to the UT JJ Pickle Research Campus in North Austin.
+            We’re headed to the
+            {" "}
+            <a href="https://goo.gl/maps/qoMNPrMX9CG2">UT JJ Pickle Research Campus</a>
+            {" "}
+            in North Austin.
             You’ll find great places to eat, drink and explore right quick.
           </p>
         </Content>
