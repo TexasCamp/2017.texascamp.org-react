@@ -18,10 +18,14 @@ class Venue extends React.Component {
     return (
       <Page name="venue" classes={['two-col', 'light-bg']}>
         <Title level="h2" title="IN A PICKLE" />
-        <Content classes={['content--aside']}>
-          <img src={map} alt="submit a session" width="411" />
-          <a href="https://www.google.com/maps/place/J.J.+Pickle+Research+Campus/@30.3876908,-97.7303761,17z/data=!3m1!4b1!4m5!3m4!1s0x8644cb88e2b39a67:0x1a1553b1ada3aeaf!8m2!3d30.3876908!4d-97.7281874" className="button--primary" target="_blank">GOOGLE MAP</a>
-        </Content>
+        <a href="https://www.google.com/maps/place/J.J.+Pickle+Research+Campus/@30.3876908,-97.7303761,17z/data=!3m1!4b1!4m5!3m4!1s0x8644cb88e2b39a67:0x1a1553b1ada3aeaf!8m2!3d30.3876908!4d-97.7281874" target="_blank">
+          <Content classes={['content--aside']}>
+            <img src={map} alt="submit a session" width="411" />
+            <a href="https://www.google.com/maps/place/J.J.+Pickle+Research+Campus/@30.3876908,-97.7303761,17z/data=!3m1!4b1!4m5!3m4!1s0x8644cb88e2b39a67:0x1a1553b1ada3aeaf!8m2!3d30.3876908!4d-97.7281874" className="button--primary" target="_blank">
+              GOOGLE MAP
+            </a>
+          </Content>
+        </a>
         <Content classes={['content--body']}>
           <p>
             We’re worked up about our venue this year!
