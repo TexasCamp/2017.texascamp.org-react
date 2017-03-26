@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../../Button';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -13,7 +12,7 @@ function Tickets() {
       <a href="https://texas-camp-2017.eventbrite.com" target="_blank">
         <Content classes={['content--aside']}>
           <img src={ticket} alt="register ticket" width="375" />
-          <Button link="https://texas-camp-2017.eventbrite.com" text="Register" />
+          <div className="button--primary">Register</div>
         </Content>
       </a>
       <Content classes={['content--body']}>
