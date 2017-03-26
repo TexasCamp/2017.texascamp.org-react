@@ -4,7 +4,7 @@ function Sponsor(props) {
   return (
     <div className="sponsor">
       <h4 className="visuallyhidden">{props.name}</h4>
-      <a className="sponsor__link" href={props.link}>
+      <a className="sponsor__link" href={props.link} target="_blank">
         <img className="sponsor__logo" src={props.logo} alt={props.name} />
       </a>
     </div>
