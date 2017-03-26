@@ -1,7 +1,8 @@
 .page--color {
   background-size: cover;
   background-attachment: fixed;
-  min-height: 19vw;
+  height: 19vh;
+  min-height: 19vh;
 
   @include breakpoint($bp-frame-break) {
     display: none;
