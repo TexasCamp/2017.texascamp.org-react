@@ -1,30 +1,10 @@
-.content--venue {
-  background-color: $c-dust-light;
-  height: auto;
-  width: auto;
-  position: absolute;
-  top: 4em;
-  left: 4em;
-  z-index: 10;
-  padding: 4em;
-}
+.page--venue {
+  .content--aside {
+    position: relative;
+  }
 
-.venue__text {
-  @include text-long;
-}
-
-.map--venue {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 46vw;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-
-#google-map {
-  width: 100%;
-  height: 46vw;
+  .button--primary {
+    position: absolute;
+    bottom: 11%;
+  }
 }
