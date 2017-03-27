@@ -7,13 +7,22 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
-  img {
+  .social-twitter {
     height: 1em;
-    width: 1em;
+  }
+
+  .social-facebook {
+    height: 1.1em;
+  }
+
+  img {
+    display: inline-block;
+    width: auto;
   }
 
   a {
     text-decoration: none;
     color: $c-black;
+    margin-right: 1.5em;
   }
 }
