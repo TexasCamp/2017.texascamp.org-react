@@ -87,12 +87,14 @@ function Sponsors() {
   return (
     <Page name="sponsors" background={background} classes={['two-col']}>
       <Content classes={['content--body']}>
-        <img src={trailer} alt="thank you trailer" className="content--trailer" />
-        <div className={['content--prospectus']}>
-          <Button
-            link="//2017.texascamp.org/sites/default/files/texas-camp-sponsor-prospectus.pdf"
-            text="Download Prospectus"
-          />
+        <div className="trailer-wrapper">
+          <img src={trailer} alt="thank you trailer" className="content--trailer" />
+          <div className={['content--prospectus']}>
+            <Button
+              link="//2017.texascamp.org/sites/default/files/texas-camp-sponsor-prospectus.pdf"
+              text="Download Prospectus"
+            />
+          </div>
         </div>
       </Content>
       <Content classes={['content--aside']}>
