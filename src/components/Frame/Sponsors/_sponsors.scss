@@ -5,15 +5,21 @@
     padding-top: 5vw;
   }
 
+  .content--body {
+    position: relative;
+  }
+
 
   .trailer-wrapper {
     position: absolute;
-    top: 10%;
     left:0;
-    width: 65%;
+    width: 140%;
+    margin-top: 10%;
+
     @include breakpoint($bp-frame-break) {
       position: relative;
       width: 100%;
+      margin: 0;
     }
   }
 
@@ -29,17 +35,12 @@
   .content--prospectus {
     position: absolute;
     height: 100%;
-    width: 100%;
-    left: 35%;
     top: 52%;
-
-    @include breakpoint($bp-frame-break) {
-      top: 52%;
-      left: 30%;
-    }
+    left: 50%;
+    transform: translateX(-50%);
 
     a{
-      //border-bottom: 1px solid $c-yellow;
+      border: none;
       box-shadow: inset 0 0 0 $c-yellow;
       color: inherit;
       text-decoration: none;
