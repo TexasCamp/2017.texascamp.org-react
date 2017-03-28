@@ -18,7 +18,7 @@ p {
   z-index: 10;
   background-color: $c-dust-light;
 
-  @include breakpoint($bp-frame-break) {
+  @include breakpoint($bp-frame-break-down) {
     padding: 0 20px;
     height: $header-footer-min-height;
   }
@@ -35,7 +35,7 @@ p {
   bottom: 0;
   left: 0;
 
-  @include breakpoint($bp-frame-break) {
+  @include breakpoint($bp-frame-break-down) {
     position: relative;
   }
 }

@@ -27,10 +27,9 @@ $base-font-size: 16px;
 
 // Setup Breakpoints
 $bp-wide: min-width 1440px;
-$bp-frame-break: max-width 768px;
-$bp-frame-desktop: min-width 768px;
-$bp-portrait:      orientation portrait;
-// $bp-phone:;
+$bp-frame-break-up: min-width 768px;
+$bp-frame-break-down: max-width 767px;
+$bp-portrait: orientation portrait;
 
 // Susy GS
 $susy: (

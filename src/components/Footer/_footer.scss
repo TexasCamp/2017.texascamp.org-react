@@ -9,7 +9,7 @@
   transform: translateY(-50%);
 
 
-  @include breakpoint($bp-frame-desktop) {
+  @include breakpoint($bp-frame-break-up) {
     float: right;
     clear: none;
     margin: 0;

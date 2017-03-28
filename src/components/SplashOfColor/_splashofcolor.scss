@@ -4,7 +4,7 @@
   height: 19vh;
   min-height: 19vh;
 
-  @include breakpoint($bp-frame-break) {
+  @include breakpoint($bp-frame-break-down) {
     display: none;
   }
 }

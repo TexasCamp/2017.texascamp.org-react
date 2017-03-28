@@ -16,7 +16,7 @@
     width: 140%;
     margin-top: 10%;
 
-    @include breakpoint($bp-frame-break) {
+    @include breakpoint($bp-frame-break-down) {
       position: relative;
       width: 100%;
       margin: 0;
@@ -47,7 +47,7 @@
       transition: background 0.3s ease-out;
     }
 
-    @include breakpoint($bp-frame-desktop) {
+    @include breakpoint($bp-frame-break-up) {
       //left: 14vw;
     }
 

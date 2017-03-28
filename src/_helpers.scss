@@ -122,7 +122,7 @@
   margin-bottom: 0.4em;
   text-transform: uppercase;
 
-  @include breakpoint($bp-frame-break) {
+  @include breakpoint($bp-frame-break-down) {
     font-size: 2.5rem;
     text-align: center;
   }

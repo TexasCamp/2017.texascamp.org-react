@@ -12,7 +12,7 @@
     margin: 0 0 10% 0;
   }
 
-  @include breakpoint($bp-frame-break) {
+  @include breakpoint($bp-frame-break-down) {
     .newsletter {
       left: 29.5vw;
     }
