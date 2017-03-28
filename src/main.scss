@@ -27,6 +27,7 @@ $base-font-size: 16px;
 
 // Setup Breakpoints
 $bp-wide: min-width 1440px;
+$bp-xs-up: min-width 667px;
 $bp-frame-break-up: min-width 768px;
 $bp-frame-break-down: max-width 767px;
 $bp-portrait: orientation portrait;
@@ -76,3 +77,4 @@ body {
 @import "./components/Social/social.scss";
 @import "./components/Footer/footer.scss";
 @import "./components/SplashOfColor/splashofcolor.scss";
+@import "./components/Title/title.scss";

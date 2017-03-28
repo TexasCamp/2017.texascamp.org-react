@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Title(props) {
-  return (<props.level>{props.title}</props.level>);
+  return (<props.level className="title">{props.title}</props.level>);
 }
 
 Title.propTypes = {
