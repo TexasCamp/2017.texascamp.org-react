@@ -15,7 +15,7 @@ function Social() {
 
 function Twitter() {
   return (
-    <a href="https://twitter.com/drupaltexascamp" target="_blank">
+    <a className="social__icon" href="https://twitter.com/drupaltexascamp" target="_blank">
       <img src={twitter} className="social-twitter" alt="twitter" />
     </a>
   );
@@ -23,7 +23,7 @@ function Twitter() {
 
 function Facebook() {
   return (
-    <a href="https://www.facebook.com/DrupalCampTexas/" target="_blank">
+    <a className="social__icon" href="https://www.facebook.com/DrupalCampTexas/" target="_blank">
       <img src={facebook} className="social-facebook" alt="facebook" />
     </a>
   );

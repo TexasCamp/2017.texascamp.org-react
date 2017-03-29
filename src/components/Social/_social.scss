@@ -19,8 +19,9 @@
   }
 
   a {
-    text-decoration: none;
-    color: $c-black;
     margin-right: 1.5em;
+    &:not(.social__icon) {
+      @include link($thin: true);
+    }
   }
 }
