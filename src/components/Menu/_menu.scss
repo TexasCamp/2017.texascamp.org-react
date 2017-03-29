@@ -1,14 +1,19 @@
 .menu--main {
   @include text-small;
+
   ul {
     padding: 0 0.8em;
+    @include breakpoint($bp-l-up) {
+      text-align: right;
+    }
   }
 
   li {
     display: inline-block;
     line-height: 3;
     padding: 0 1em;
-    @include breakpoint($bp-frame-break-up) {
+
+    @include breakpoint($bp-l-up) {
       line-height: 1.5;
     }
 

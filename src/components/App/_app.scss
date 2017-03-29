@@ -15,13 +15,25 @@ p {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 1.5rem;
+  width: 100%;
   z-index: 10;
 
+  > * {
+    flex: 1 1 100%;
+  }
+
   @include breakpoint($bp-frame-break-up) {
-    flex-wrap: nowrap;
     min-height: $outer-frame-width;
     padding: 1rem $outer-frame-width;
+  }
+
+  @include breakpoint($bp-l-up) {
+    flex-wrap: nowrap;
     width: 100%;
+
+    > * {
+      flex: 1 1 auto;
+    }
   }
 }
 
@@ -32,7 +44,7 @@ p {
 }
 
 .footer--page {
-  @include breakpoint($bp-frame-break-up) {
+  @include breakpoint($bp-l-up) {
     bottom: 0;
     left: 0;
     position: fixed;
