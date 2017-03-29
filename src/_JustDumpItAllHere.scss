@@ -130,13 +130,19 @@ form[name="formioForm"] {
   padding-bottom: 4vw;
 
   h2 {
-    @include span(16);
-    @include prefix(2);
+    padding: 0 5%;
+    @include breakpoint($bp-l-up) {
+      @include prefix(2);
+    }
   }
 
   .content--body {
-    @include span(16);
-    @include prefix(2);
+    padding: 0 5%;
+    @include breakpoint($bp-l-up) {
+      @include span(16);
+      @include prefix(2);
+      padding-right: 0;
+    }
   }
 }
 
