@@ -9,33 +9,32 @@ p {
 
 .header--page,
 .footer--page {
-  @extend .clearfix;
-  height: $outer-frame-width;
-  min-height: $header-footer-min-height;
-  width: 100%;
-  margin: 0;
-  padding: 0 $outer-frame-width;
-  z-index: 10;
+  align-items: center;
   background-color: $c-dust-light;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+  z-index: 10;
 
-  @include breakpoint($bp-frame-break-down) {
-    padding: 0 20px;
-    height: $header-footer-min-height;
+  @include breakpoint($bp-frame-break-up) {
+    flex-wrap: nowrap;
+    min-height: $outer-frame-width;
+    padding: 1rem $outer-frame-width;
+    width: 100%;
   }
 }
 
 .header--page {
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
 }
 
 .footer--page {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-
-  @include breakpoint($bp-frame-break-down) {
-    position: relative;
+  @include breakpoint($bp-frame-break-up) {
+    bottom: 0;
+    left: 0;
+    position: fixed;
   }
 }

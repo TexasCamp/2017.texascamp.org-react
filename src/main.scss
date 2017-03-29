@@ -38,7 +38,7 @@ $susy: (
 );
 
 // MISC
-$outer-frame-width: 7.6vh;
+$outer-frame-width: 6.3vh;
 $header-footer-min-height: 50px;
 
 @import "./reset.scss";
@@ -75,6 +75,6 @@ body {
 @import "./components/Frame/Finish/finish.scss";
 @import "./components/NewsletterForm/newsletter-form.scss";
 @import "./components/Social/social.scss";
-@import "./components/Footer/footer.scss";
+@import "./components/Credits/credits.scss";
 @import "./components/SplashOfColor/splashofcolor.scss";
 @import "./components/Title/title.scss";

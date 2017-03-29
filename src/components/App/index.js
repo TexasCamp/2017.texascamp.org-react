@@ -7,7 +7,7 @@ import {
 import CampInfo from '../CampInfo';
 import Menu from '../Menu';
 import Social from '../Social';
-import Footer from '../Footer';
+import Credits from '../Credits';
 import HomeScreen from '../Screen/components/Home';
 import SubmitSessionScreen from '../Screen/components/SubmitSession';
 import CoCScreen from '../Screen/components/CoC';
@@ -29,7 +29,7 @@ function App() {
 
         <footer className="footer footer--page">
           <Social />
-          <Footer />
+          <Credits />
         </footer>
       </div>
     </Router>

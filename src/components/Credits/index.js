@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Credits() {
   return (
-    <div id="footer">
+    <div id="credits">
       Hosting provided by
       {" "}
       <a href="https://www.amazee.io/" target="_blank">amazee.io</a>
@@ -16,4 +16,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Credits;

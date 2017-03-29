@@ -1,0 +1,8 @@
+ #credits {
+  @include text-small;
+  margin-bottom: 1.5rem;
+
+  @include breakpoint($bp-frame-break-up) {
+    margin-bottom: 0;
+  }
+}
