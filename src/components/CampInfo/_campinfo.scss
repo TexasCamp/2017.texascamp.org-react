@@ -1,15 +1,34 @@
+$bp-info-break: min-width 412px;
+
 .camp-info {
   @include text-small;
   align-items: center;
   display: flex;
-  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  flex: 1;
+
+  @include breakpoint($bp-info-break) {
+    flex-wrap: nowrap;
+  }
 
   @include breakpoint($bp-l-up) {
     margin-bottom: 0;
   }
 
-  p {
-    margin-bottom: 0;
+  .separator {
+    display: none;
+
+    @include breakpoint($bp-info-break) {
+      display: block;
+    }
+  }
+
+  .camp-date {
+    flex: 1 1 100%;
+
+    @include breakpoint($bp-info-break) {
+      flex: initial;
+    }
   }
 }
 

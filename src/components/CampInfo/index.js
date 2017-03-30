@@ -5,7 +5,9 @@ function CampInfo() {
   return (
     <section className="camp-info">
       <Drupalicon />
-      <p>Texas Camp &nbsp;&middot;&nbsp; June 2-4, 2017, Austin, TX</p>
+      <span className="camp-name">Texas Camp</span>
+      <span className="separator">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+      <span className="camp-date">June 2-4, 2017, Austin, TX</span>
     </section>
   );
 }

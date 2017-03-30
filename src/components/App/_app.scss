@@ -18,10 +18,6 @@ p {
   width: 100%;
   z-index: 10;
 
-  > * {
-    flex: 1 1 100%;
-  }
-
   @include breakpoint($bp-frame-break-up) {
     min-height: $outer-frame-width;
     padding: 1rem $outer-frame-width;
@@ -30,10 +26,6 @@ p {
   @include breakpoint($bp-l-up) {
     flex-wrap: nowrap;
     width: 100%;
-
-    > * {
-      flex: 1 1 auto;
-    }
   }
 }
 
