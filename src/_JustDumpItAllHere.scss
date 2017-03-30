@@ -156,6 +156,22 @@ form[name="formioForm"] {
 
   h2 {
     padding-top: 4vw;
+
+    @include breakpoint($bp-frame-break-up) {
+      @include span(24);
+      @include prefix(2);
+    }
+
+    @include breakpoint($bp-l-up) {
+      @include span(12);
+    }
+  }
+
+  .content--body {
+    @include breakpoint($bp-frame-break-up) {
+      @include span(12);
+      @include prefix(2);
+    }
   }
 
   .content--aside {
@@ -168,23 +184,16 @@ form[name="formioForm"] {
         display: block;
       }
     }
-  }
 
-  @include breakpoint($bp-frame-break-up) {
-    h2 {
-      @include span(12);
-      @include prefix(2);
-    }
-
-    .content--body {
-      @include span(12);
-      @include prefix(2);
-    }
-
-    .content--aside {
+    @include breakpoint($bp-frame-break-up) {
       @include span(11 at 14);
+      padding-right: span(2);
       display: flex;
       flex-direction: column;
+    }
+
+    @include breakpoint($bp-l-up) {
+      padding-right: 0;
     }
   }
 }
