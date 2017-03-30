@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div id="app">
-        <header className="header header--page">
+        <header id="header" className="header header--page">
           <CampInfo />
           <EnhancedMenu />
         </header>

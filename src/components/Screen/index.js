@@ -1,16 +1,34 @@
 import React from 'react';
 
-function Screen(props) {
-  const classes = [
-    'pages',
-    `screen--${props.name}`,
-  ].concat(props.classes);
+class Screen extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      headerHeight: "50",
+    }
+  }
 
-  return (
-    <section className={classes.join(' ')}>
-      {props.children}
-    </section>
-  );
+  componentDidMount() {
+    const headerHeight = document.getElementById("header").clientHeight;
+    this.setState({ headerHeight: headerHeight });
+  }
+
+  render() {
+    const classes = [
+      'pages',
+      `screen--${this.props.name}`,
+    ].concat(this.props.classes);
+
+    const styles = {
+      marginTop: `${this.state.headerHeight}px`,
+    };
+
+    return (
+      <section className={classes.join(' ')} style={styles}>
+        {this.props.children}
+      </section>
+    )
+  }
 }
 
 Screen.propTypes = {
