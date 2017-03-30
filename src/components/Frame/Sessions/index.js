@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -9,12 +10,12 @@ function Sessions() {
   return (
     <Page name="sessions" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="Step right up" />
-      <a href="/submit-session">
+      <Link to="/submit-session">
         <Content classes={['content--aside']}>
           <img src={wanted} alt="submit a session" width="411" />
           <div className="button--primary">Submit a session</div>
         </Content>
-      </a>
+      </Link>
       <Content classes={['content--body']}>
         <p>
           You have an idea?
