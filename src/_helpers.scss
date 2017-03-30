@@ -112,6 +112,12 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    background: darken($bg, 15%);
+  }
 }
 
 @mixin text-heading {
