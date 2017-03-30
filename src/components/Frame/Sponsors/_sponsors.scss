@@ -42,7 +42,17 @@
     }
   }
 
+  // Override defaults
   .content--aside {
-    align-items: stretch !important; // override default
+    align-items: stretch !important;
+    padding-right: 0 !important;
+
+    @include breakpoint($bp-xs-up) {
+      padding-right: 3rem !important;
+    }
+
+    img {
+      width: 100% !important;
+    }
   }
 }

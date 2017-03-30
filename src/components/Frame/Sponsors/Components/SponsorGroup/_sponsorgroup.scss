@@ -1,7 +1,11 @@
 .sponsor-group {
   border-left: 3px solid $c-dust-golden;
   display: flex;
-  margin: 0 8vw 4.5rem 4rem;
+  margin: 0 2vw 4.5rem;
+
+  @include breakpoint($bp-l-up) {
+    margin: 0 8vw 4.5rem 4rem;
+  }
 }
 
 .sponsor-group__title {
