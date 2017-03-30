@@ -3,16 +3,42 @@ import MenuScroll from '../MenuScroll';
 import MenuRouter from '../MenuRouter';
 import hamburger from './hamburger.png';
 
-function Menu(props) {
-  const { location } = props;
-  const Component = location.pathname === '/' ? MenuScroll : MenuRouter;
+class Menu extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <section className="menu menu--main">
-      <img className="menu--hamburger" src={hamburger} alt="toggle main menu" />
-      <Component />
-    </section>
-  );
+    this.state = {
+      showHamburger: false,
+    };
+  }
+
+  handleClick() {
+    this.setState({ showHamburger: !this.state.showHamburger });
+  }
+
+  render() {
+    const Component = this.props.location.pathname === '/' ? MenuScroll : MenuRouter;
+    const classes = [
+      'menu',
+      'menu--main',
+    ];
+
+    if (this.state.showHamburger) {
+      classes.push('menu--open');
+    }
+
+    return (
+      <section className={classes.join(' ')}>
+        <img
+          className="menu--hamburger"
+          onClick={() => this.handleClick()}
+          src={hamburger}
+          alt="toggle menu"
+        />
+        <Component />
+      </section>
+    );
+  }
 }
 
 Menu.propTypes = {

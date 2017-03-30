@@ -70,5 +70,32 @@
       }
     }
   }
+
+  &.menu--open {
+    nav {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 10px 1.5rem;
+      background-color: $c-dust-light;
+
+      @include breakpoint($bp-frame-break-up) {
+        padding-left: $outer-frame-width;
+      }
+
+      ul {
+        padding-left: 0;
+
+        li {
+          line-height: 2;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
