@@ -2,11 +2,19 @@
   .menu--hamburger {
     height: 2em;
     display: block;
+
+    @include breakpoint($bp-menu) {
+      display: none;
+    }
   }
 
   nav {
     @include text-small;
     display: none;
+
+    @include breakpoint($bp-menu) {
+      display: block;
+    }
 
     ul {
       padding: 0 0.8em;
