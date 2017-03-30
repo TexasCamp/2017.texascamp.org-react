@@ -24,6 +24,10 @@ function Sessions() {
           email: stephanie@amazeelabs.com<br />
         phone: 512-766-4312</p>
 
+        <p>David Porter<br />
+          email: anomalous20@gmail.com<br />
+        phone: 915-526-6040</p>
+
         <p>We do not tolerate harassment in any form. If you feel threatened or
         violated as a result of intimidating, harassing, abusive,
         discriminatory, derogatory or demeaning conduct, please immediately
