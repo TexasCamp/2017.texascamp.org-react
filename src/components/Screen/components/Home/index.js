@@ -9,13 +9,13 @@ import Venue from '../../../Frame/Venue';
 import News from '../../../Frame/News';
 import Finish from '../../../Frame/Finish';
 import SplashOfColor from '../../../SplashOfColor';
-import splash1 from './splash1.jpg';
-import splash2 from './splash2.jpg';
-import splash3 from './splash3.jpg';
-import splash4 from './splash4.jpg';
-import splash5 from './splash5.jpg';
-import splash6 from './splash6.jpg';
-import splash7 from './splash7.jpg';
+import splash1 from './compressed/bloom_opt.jpg';
+import splash2 from './compressed/capital_opt.jpg';
+import splash3 from './compressed/session_opt.jpg';
+import splash4 from './compressed/railroad-crossing_opt.jpg';
+import splash5 from './compressed/pickle_opt.jpg';
+import splash6 from './compressed/longhorn_opt.jpg';
+import splash7 from './compressed/windmill_opt.jpg';
 
 function HomeScreen() {
   return (
