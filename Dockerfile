@@ -1,5 +1,7 @@
 FROM amazeeio/centos7-node:node6
 
+RUN yum install -y bzip2
+
 # Use changes to package.json and yarn.lock to see if Docker should use cached nodejs deps.
 COPY package.json yarn.lock /app/
 
