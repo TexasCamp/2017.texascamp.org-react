@@ -26,4 +26,12 @@
     background: transparent;
     margin: 0 0 10% 0;
   }
+
+  .title {
+    visibility: hidden;
+
+    @include breakpoint($bp-frame-break-up) {
+      visibility: visible;
+    }
+  }
 }

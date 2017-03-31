@@ -1,4 +1,10 @@
 .page--submit-session {
+  .title,
   .content--body {
+    visibility: hidden;
+
+    @include breakpoint($bp-frame-break-up) {
+      visibility: visible;
+    }
   }
 }

@@ -24,4 +24,13 @@
       padding: 3px 27px;
     }
   }
+
+  .title,
+  .content--body {
+    visibility: hidden;
+
+    @include breakpoint($bp-frame-break-up) {
+      visibility: visible;
+    }
+  }
 }

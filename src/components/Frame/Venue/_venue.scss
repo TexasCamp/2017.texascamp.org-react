@@ -1,4 +1,12 @@
 .page--venue {
+  .content--aside {
+    margin-bottom: 2rem;
+
+    @include breakpoint($bp-frame-break-up) {
+      margin-bottom: 0;
+    }
+  }
+
   .content--body {
     @include text-long;
   }
@@ -17,6 +25,14 @@
     @include breakpoint($bp-frame-break-up) {
       position: relative;
       margin: -5em 0 0 0;
+    }
+  }
+
+  .title {
+    visibility: hidden;
+
+    @include breakpoint($bp-frame-break-up) {
+      visibility: visible;
     }
   }
 }

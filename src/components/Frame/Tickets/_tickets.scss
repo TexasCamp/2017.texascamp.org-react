@@ -21,4 +21,13 @@
       left: 14vw;
     }
   }
+
+  .title,
+  .content--body {
+    visibility: hidden;
+
+    @include breakpoint($bp-frame-break-up) {
+      visibility: visible;
+    }
+  }
 }
