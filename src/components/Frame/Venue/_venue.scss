@@ -4,13 +4,19 @@
   }
 
   .button--primary {
-    position: absolute;
-    bottom: 11%;
+    min-width: 11em;
+    max-width: 20em;
 
     @include breakpoint($bp-frame-break-down) {
-      margin: auto;
+      position: absolute;
+      bottom: 11%;
       width: 50%;
       left: 22vw;
+    }
+
+    @include breakpoint($bp-frame-break-up) {
+      position: relative;
+      margin: -5em 0 0 0;
     }
   }
 }
