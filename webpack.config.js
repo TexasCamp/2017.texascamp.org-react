@@ -4,6 +4,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin');
+const path = require('path');
 const autoprefixer = require('autoprefixer');
 const NODE_ENV = process.env.NODE_ENV ? process.env.NODE_ENV.toLowerCase() : 'development';
 const THEME_DIR = 'src/';
@@ -85,6 +86,10 @@ module.exports = {
     filename: 'texascamp.[hash].js',
   },
   module: {
+    noParse: [
+      path.resolve('node_modules/react-quill/node_modules/quill/dist/quill.js'),
+      path.resolve('node_modules/quill/dist/quill.js'),
+    ],
     loaders,
   },
   postcss: () => [autoprefixer],
