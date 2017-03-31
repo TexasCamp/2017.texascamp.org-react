@@ -1,20 +1,29 @@
 .page--news {
   .newsletter {
-    position: absolute;
-    bottom: 15%;
-    width: 33%;
     text-align: center;
+    min-width: 11em;
+    max-width: 20em;
+
+    @include breakpoint($bp-frame-break-down) {
+      position: absolute;
+      bottom: 15%;
+      width: 33%;
+      left: 29.5vw;
+    }
+
+    @include breakpoint($bp-frame-break-up) {
+      position: relative;
+      margin: -12em 0 0 0;
+    }
+
+    @include breakpoint($bp-l-up) {
+      margin: -15em 0 0 0;
+    }
   }
 
   input[type="text"],
   input[type="email"] {
     background: transparent;
     margin: 0 0 10% 0;
-  }
-
-  @include breakpoint($bp-frame-break-down) {
-    .newsletter {
-      left: 29.5vw;
-    }
   }
 }
