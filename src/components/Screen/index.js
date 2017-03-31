@@ -9,8 +9,14 @@ class Screen extends React.Component {
   }
 
   componentDidMount() {
-    const headerHeight = document.getElementById('header').clientHeight;
-    this.setState({ headerHeight: headerHeight });
+    this.setHeight();
+  }
+
+  setHeight() {
+    const actualHeight = document.getElementById('header').clientHeight;
+    this.setState({
+      headerHeight: actualHeight,
+    });
   }
 
   render() {
