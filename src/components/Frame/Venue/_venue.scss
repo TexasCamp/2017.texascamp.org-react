@@ -16,10 +16,12 @@
     max-width: 20em;
 
     @include breakpoint($bp-frame-break-down) {
-      position: absolute;
       bottom: 11%;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
       width: 50%;
-      left: 22vw;
     }
 
     @include breakpoint($bp-frame-break-up) {
