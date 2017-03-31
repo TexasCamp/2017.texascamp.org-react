@@ -10,6 +10,7 @@ import amazeeLogo from './logos/amazee-labs.png';
 import fourkitchensLogo from './logos/four-kitchens.png';
 import pantheonLogo from './logos/pantheon.png';
 import kanopiLogo from './logos/kanopi-studios.png';
+import levelten from './logos/level-ten-interactive.png';
 import acquiaLogo from './logos/acquia.png';
 import amazeeio from './logos/amazeeio.svg';
 import softescuLogo from './logos/softescu.png';
@@ -54,6 +55,11 @@ function Sponsors() {
           name: 'Kanopi Studios',
           link: 'https://www.kanopistudios.com',
           logo: kanopiLogo,
+        },
+        {
+          name: 'LevelTen Interactive',
+          link: 'http://getlevelten.com/',
+          logo: levelten,
         },
       ],
     },
