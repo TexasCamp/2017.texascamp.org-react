@@ -12,18 +12,15 @@
   }
 
   .logo {
+    left: 0;
+    margin: auto;
     position: absolute;
-    text-align: center;
-    width: 37%;
+    right: 0;
+    top: 21%;
+    width: 67vmin;
   }
 
   .logo--infill {
-    top: 21%;
-    left: 31%;
-  }
-
-  .logo--outline {
-    top: 20.5%;
-    left: 30.5%;
+    padding: 1vmin 0 0 1vmin;
   }
 }
