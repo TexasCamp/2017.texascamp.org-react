@@ -85,6 +85,7 @@ module.exports = {
     filename: 'texascamp.[hash].js',
   },
   module: {
+    noParse: /node_modules\/quill/,
     loaders,
   },
   postcss: () => [autoprefixer],
