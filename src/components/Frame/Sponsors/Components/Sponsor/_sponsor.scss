@@ -28,7 +28,9 @@
   .sponsor {
     flex: 1 1 calc(50% - 0.5rem);
     max-width: calc(50% - 0.5rem);
+    height: 4rem;
     min-height: 4rem;
+    max-height: 4rem;
     // TODO: margin bottom logic for multiple sponsors
 
     &:nth-child(odd) {
