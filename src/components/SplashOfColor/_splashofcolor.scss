@@ -1,6 +1,8 @@
 .page--color {
   background-size: cover;
-  background-attachment: fixed;
   height: 19vh;
   min-height: 19vh;
+  @include breakpoint($bp-l-up) {
+    background-attachment: fixed;
+  }
 }
