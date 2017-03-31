@@ -26,11 +26,12 @@ $f-script: "calder-script", sans-serif;
 $base-font-size: 16px;
 
 // Setup Breakpoints
-$bp-wide: min-width 1440px;
-$bp-xs-up: min-width 667px;
-$bp-frame-break-up: min-width 768px;
-$bp-l-up: min-width 1024px;
-$bp-menu: min-width 820px;
+$bp-xxs-up:          min-width 480px;
+$bp-xs-up:           min-width 667px;
+$bp-frame-break-up:  min-width 768px;
+$bp-menu:            min-width 820px;
+$bp-l-up:            min-width 1024px;
+$bp-wide:            min-width 1440px;
 
 $bp-frame-break-down: max-width 767px;
 $bp-portrait: orientation portrait;

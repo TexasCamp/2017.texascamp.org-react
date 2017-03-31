@@ -3,25 +3,21 @@
     position: absolute;
     bottom: 9%;
     padding: 3px 5px;
+    left: 0;
+    margin: auto;
     min-width: 16em;
-
-    @include breakpoint($bp-frame-break-down) {
-      margin: auto;
-      width: 50%;
-      left: 22vw;
-    }
+    right: 0;
+    width: 50%;
 
     @include breakpoint($bp-frame-break-up) {
-      margin: auto;
-      width: 55%;
-      left: 5vw;
+      position: relative;
+      top: -4em;
     }
 
     @include breakpoint($bp-l-up) {
-      margin: auto;
-      width: 31%;
-      left: 34%;
       padding: 3px 27px;
+      top: -6em;
+      width: 31%;
     }
   }
 

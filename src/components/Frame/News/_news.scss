@@ -1,14 +1,16 @@
 .page--news {
   .newsletter {
-    text-align: center;
-    min-width: 11em;
     max-width: 20em;
+    min-width: 11em;
+    text-align: center;
 
     @include breakpoint($bp-frame-break-down) {
-      position: absolute;
       bottom: 15%;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
       width: 33%;
-      left: 29.5vw;
     }
 
     @include breakpoint($bp-frame-break-up) {

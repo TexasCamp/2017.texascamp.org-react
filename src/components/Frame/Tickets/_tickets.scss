@@ -2,23 +2,19 @@
   .button--primary {
     position: absolute;
     bottom: 9%;
-
-    @include breakpoint($bp-frame-break-down) {
-      margin: auto;
-      width: 50%;
-      left: 22vw;
-    }
+    left: 0;
+    margin: auto;
+    max-width: 14em;
+    right: 0;
+    width: 50%;
 
     @include breakpoint($bp-frame-break-up) {
-      margin: auto;
-      width: 40%;
-      left: 8vw;
+      position: relative;
+      top: -4em;
     }
 
     @include breakpoint($bp-l-up) {
-      margin: auto;
-      width: 33%;
-      left: 14vw;
+      top: -6em;
     }
   }
 

@@ -177,14 +177,6 @@ form[name="formioForm"] {
   .content--aside {
     align-items: center;
 
-    @include breakpoint($bp-frame-break-down) {
-      img {
-        margin: auto;
-        width: 75%;
-        display: block;
-      }
-    }
-
     @include breakpoint($bp-frame-break-up) {
       @include span(11 at 14);
       padding-right: span(2);
@@ -194,6 +186,13 @@ form[name="formioForm"] {
 
     @include breakpoint($bp-l-up) {
       padding-right: 0;
+    }
+
+    img {
+     @include breakpoint($bp-frame-break-down) {
+        margin: auto;
+        display: block;
+      }
     }
   }
 }
