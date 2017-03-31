@@ -6,9 +6,13 @@ From the command line find this repository.
 
 Run `yarn` or `npm install` (yarn is faster).
 
-Run `npm start`
+Run `yarn start` or `npm start`
 
-Open: http://localhost:8080/webpack-dev-server/
+!Important!
+Open: http://0.0.0.0:8080/
+Do not use: http://0.0.0.0:8080/webpack-dev-server/
+The second url puts everything in an iframe and it breaks a lot of things.
+Thanks for catching this Maria!
 
 
 ## WIP: Getting up and running on Amazee-io domain:
