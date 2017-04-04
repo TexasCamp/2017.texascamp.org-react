@@ -21,7 +21,7 @@ function Sessions() {
           You have an idea?
           We want to hear it.
           Submit your sessions here!
-          Session submissions close April 31st at midnight.
+          Session submissions close April 28th at midnight.
         </p>
       </Content>
     </Page>
