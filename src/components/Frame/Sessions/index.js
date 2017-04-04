@@ -19,9 +19,9 @@ function Sessions() {
       <Content classes={['content--body']}>
         <p>
           You have an idea?
-          We want to hear it.
-          Submit your sessions here!
-          Session submissions close April 28th at midnight.
+          We want to hear it.&nbsp;
+          <Link to="/submit-session">Submit your sessions here!</Link>
+          &nbsp;Session submissions close April 28th at midnight.
         </p>
       </Content>
     </Page>

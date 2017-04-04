@@ -23,6 +23,7 @@
 
   .title,
   .content--body {
+    @include text-long;
     visibility: hidden;
 
     @include breakpoint($bp-frame-break-up) {
