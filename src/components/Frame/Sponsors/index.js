@@ -15,6 +15,7 @@ import acquiaLogo from './logos/acquia.png';
 import amazeeio from './logos/amazeeio.svg';
 import softescuLogo from './logos/softescu.png';
 import texascreativeLogo from './logos/texas-creative.png';
+import prometsourceLogo from './logos/promet-source.png';
 
 function Sponsors() {
   const sponsors = [
@@ -45,6 +46,11 @@ function Sponsors() {
           name: 'Pantheon',
           link: 'https://pantheon.io',
           logo: pantheonLogo,
+        },
+        {
+          name: 'prometsource',
+          link: 'https://www.prometsource.com',
+          logo: prometsourceLogo,
         },
       ],
     },
