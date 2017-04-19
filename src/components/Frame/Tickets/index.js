@@ -20,6 +20,18 @@ function Tickets() {
           Y’all fixin’ to make your way to Austin? Get your tickets right
           quick—it’s almost here.
         </p>
+        <p>
+          Our trainings will make you smarter than a whip, and for only $25.
+        </p>
+        <ul>
+          <li>Drupal 8 Certification Crash Course (Rackspace)</li>
+          <li>
+            What Am I getting Myself Into? A Drupal Crash Coures for Non-Developers
+            (Promet Source)
+          </li>
+          <li>Automated workflows in Drupal 8 with GitHub, Composer and CircleCI (Pantheon)</li>
+          <li>API First Drupal 8 with React.js and Waterwheel (Four Kitchens)</li>
+        </ul>
       </Content>
 
     </Page>
