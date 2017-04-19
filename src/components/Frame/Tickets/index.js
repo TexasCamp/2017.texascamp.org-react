@@ -3,7 +3,7 @@ import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
 import background from './tickets-bg.jpg';
-import ticket from './ticket.png';
+import ticket from './ticket-regular.png';
 
 function Tickets() {
   return (
