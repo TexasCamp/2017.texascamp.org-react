@@ -26,7 +26,7 @@ function Tickets() {
         <ul>
           <li>Drupal 8 Certification Crash Course (Rackspace)</li>
           <li>
-            What Am I getting Myself Into? A Drupal Crash Coures for Non-Developers
+            What Am I getting Myself Into? A Drupal Crash Course for Non-Developers
             (Promet Source)
           </li>
           <li>Automated workflows in Drupal 8 with GitHub, Composer and CircleCI (Pantheon)</li>
