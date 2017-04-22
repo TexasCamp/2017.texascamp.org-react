@@ -1,3 +1,7 @@
 .btn-primary {
   @include button;
 }
+
+.page--submit-session p a {
+  @include link();
+}
