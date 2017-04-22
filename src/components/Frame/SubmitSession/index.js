@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 // Required for Form.io <select> components
 import 'react-widgets/lib/scss/react-widgets.scss';
 // Required for Form.io WYSIWYG
@@ -57,7 +58,8 @@ class Sessions extends React.Component {
           <p>
             We're looking for sessions that are 45 minutes long to allow 10 minutes for audience
             Q+A. You may promote a project or organization you are working on if it is relevant, but
-            please no sales pitches. Speakers are expected to follow our code of conduct.
+            please no sales pitches. Speakers are expected to follow our&nbsp;
+            <Link to="/code-of-conduct">code of conduct</Link>.
           </p>
           <p>
             Speakers will receive a free ticket to the event. We are not yet able to pay speakers
