@@ -65,6 +65,14 @@ const loaders = [
     test: /\.png|.svg|.jpg|.gif|\.ttf|\.woff|\.eot|\.ico$/,
     loaders: ['file'],
   },
+  {
+    test: /\.pdf$/,
+    loader: 'file',
+    query:
+    {
+      name: '[name]-[hash].[ext]'
+    }
+  },
 ];
 
 if (NODE_ENV === 'production') {
