@@ -8,8 +8,9 @@ var port = isProduction ? process.env.PORT : 3000;
 var publicPath = path.resolve(__dirname, 'build');
 
 // We point to our static assets
-app.use(express.static(publicPath));
-
+app.use(express.static(publicPath, {
+  maxage: '4h'
+}));
 // Redirect all non-static requests to our app
 app.get('/*', function(req, res){
   res.sendFile(publicPath + '/index.html');
