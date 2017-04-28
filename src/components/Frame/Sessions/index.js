@@ -30,8 +30,13 @@ function Sessions() {
           communication to assist speakers (new and old) in creating engaging and informative
           sessions.
         </p>
-        <p>Session submissions will close Friday, April 28, 2017.</p>
-        <p><Link to="/submit-session">Session Guidelines</Link></p>
+        <p>Session submissions will close at midnight Monday, May 1, 2017.</p>
+        <p>
+          <Link to="/submit-session">Session Guidelines</Link><br />
+          <a href="https://docs.google.com/spreadsheets/d/1qb1K8GaPbmaXYMn7mA_M0Cvy9-CqV1MYzf14gL-ZIEs/edit#gid=0">
+            Submitted Sessions
+          </a>
+        </p>
       </Content>
     </Page>
   );

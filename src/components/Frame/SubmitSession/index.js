@@ -51,6 +51,11 @@ class Sessions extends React.Component {
         <Title level="h2" title="Submit A Session" />
         <Content classes={['content--body']}>
           <p>
+            <a href="https://docs.google.com/spreadsheets/d/1qb1K8GaPbmaXYMn7mA_M0Cvy9-CqV1MYzf14gL-ZIEs/edit#gid=0">
+              Submitted Sessions
+            </a>
+          </p>
+          <p>
             Texas Camp is soliciting sessions geared toward beginner through advanced Drupal users.
             If you're passionate about the topic, we want to hear it! Subject matter can be Drupal,
             PHP in general, related technologies, soft skills, testing, tools, workflow, etc.
