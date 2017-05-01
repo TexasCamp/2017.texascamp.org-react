@@ -17,6 +17,7 @@ import amazeeio from './logos/amazeeio.svg';
 import softescuLogo from './logos/softescu.png';
 import texascreativeLogo from './logos/texas-creative.png';
 import prometsourceLogo from './logos/promet-source.png';
+import zilleemLogo from './logos/zilleem_logo_white.jpg';
 
 function Sponsors() {
   const sponsors = [
@@ -92,6 +93,11 @@ function Sponsors() {
           name: 'Texas Creative',
           link: 'https://texascreative.com',
           logo: texascreativeLogo,
+        },
+        {
+          name: 'Zilleem',
+          link: 'http://zilleem.com/',
+          logo: zilleemLogo,
         },
       ],
     },
