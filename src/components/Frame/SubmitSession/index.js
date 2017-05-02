@@ -1,10 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// Required for Form.io <select> components
-import 'react-widgets/lib/scss/react-widgets.scss';
-// Required for Form.io WYSIWYG
-import 'quill/dist/quill.snow.css';
-import { Formio } from 'react-formio';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -36,15 +31,6 @@ class Sessions extends React.Component {
 
   render() {
     const classes = ['one-col', 'light-bg', 'fixed-bg'];
-    let form = (<Formio
-      src="https://jqvzsivhnemmbtq.form.io/session"
-      onFormLoad={this.onLoad}
-      onFormSubmit={this.onSuccess}
-    />);
-
-    if (this.state.sessionSubmitted) {
-      form = <span />;
-    }
 
     return (
       <Page name="submit-session" background={background} classes={classes}>
@@ -74,8 +60,9 @@ class Sessions extends React.Component {
             Email <a href="mailto:hello@texascamp.org">hello@texascamp.org</a> or tweet
             &nbsp;<a href="https://twitter.com/drupaltexascamp">@drupaltexascamp</a> with questions.
           </p>
-          <div className="form-messages">{this.state.message}</div>
-          {form}
+          <p>
+            <strong>Session submissions are closed, thanks y'all!</strong>
+          </p>
         </Content>
       </Page>
     );

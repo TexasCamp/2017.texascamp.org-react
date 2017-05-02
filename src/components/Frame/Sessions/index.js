@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -10,12 +9,9 @@ function Sessions() {
   return (
     <Page name="sessions" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="Step right up" />
-      <Link to="/submit-session">
-        <Content classes={['content--aside']}>
-          <img src={wanted} alt="submit a session" width="411" />
-          <div className="button--primary">Submit a session</div>
-        </Content>
-      </Link>
+      <Content classes={['content--aside']}>
+        <img src={wanted} alt="submit a session" width="411" />
+      </Content>
       <Content classes={['content--body']}>
         <p>
           We are looking for folks just like you to speak to our frontier of Drupal enthusiasts!
@@ -32,7 +28,6 @@ function Sessions() {
         </p>
         <p>Session submissions will close at midnight Monday, May 1, 2017.</p>
         <p>
-          <Link to="/submit-session">Session Guidelines</Link><br />
           <a href="https://docs.google.com/spreadsheets/d/1qb1K8GaPbmaXYMn7mA_M0Cvy9-CqV1MYzf14gL-ZIEs/edit#gid=0">
             Submitted Sessions
           </a>
