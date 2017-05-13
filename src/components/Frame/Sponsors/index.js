@@ -18,6 +18,7 @@ import softescuLogo from './logos/softescu.png';
 import texascreativeLogo from './logos/texas-creative.png';
 import prometsourceLogo from './logos/promet-source.png';
 import zilleemLogo from './logos/zilleem_logo_white.jpg';
+import bluesparkLogo from './logos/bluesparkLogo.png';
 
 function Sponsors() {
   const sponsors = [
@@ -66,7 +67,7 @@ function Sponsors() {
         },
         {
           name: 'LevelTen Interactive',
-          link: 'http://getlevelten.com/',
+          link: 'http://getlevelten.com',
           logo: levelten,
         },
       ],
@@ -81,7 +82,7 @@ function Sponsors() {
         },
         {
           name: 'Amazee.io',
-          link: 'https://www.amazee.io/',
+          link: 'https://www.amazee.io',
           logo: amazeeio,
         },
         {
@@ -96,8 +97,13 @@ function Sponsors() {
         },
         {
           name: 'Zilleem',
-          link: 'http://zilleem.com/',
+          link: 'http://zilleem.com',
           logo: zilleemLogo,
+        },
+        {
+          name: 'Bluespark',
+          link: 'https://www.bluespark.com',
+          logo: bluesparkLogo,
         },
       ],
     },
