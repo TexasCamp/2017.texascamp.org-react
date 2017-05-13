@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Page from '../../Page';
 import Title from '../../Title';
 import Content from '../../Content';
@@ -34,7 +35,26 @@ class Venue extends React.Component {
             <a href="https://goo.gl/maps/qoMNPrMX9CG2" target="_blank">UT JJ Pickle Research Campus</a>
             {" "}
             in North Austin.
-            We reckon you’ll find great places to eat, drink and explore.
+            We reckon you’ll find great places to eat, drink and explore.&nbsp;
+            <Link
+              offset={-55}
+              isDynamic={Boolean(true)}
+              to="news"
+              onSetActive={this.handleSetActive}
+              spy
+              smooth
+              duration={500}
+            >
+              Sign up for our newsletter
+            </Link>&nbsp;
+            to get the best recommendations.
+          </p>
+          <p>
+            <a href="https://fasten.com/">Fasten</a>,&nbsp;
+            <a href="http://www.rideaustin.com/">Ride Austin</a>, and&nbsp;
+            <a href="http://www.ridefare.com/">Fare</a> are the local Austin
+            rideshare apps. Download the app when you land and use Google to
+            find a new user discount code.
           </p>
         </Content>
       </Page>
