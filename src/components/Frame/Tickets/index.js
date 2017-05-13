@@ -18,10 +18,12 @@ function Tickets() {
       <Content classes={['content--body']}>
         <p>
           Y’all fixin’ to make your way to Austin? Get your tickets right
-          quick—it’s almost here.
+          quick—it’s almost here. Register to attend the main camp for $50 if
+          you register in advance online, $75 at the door.
         </p>
         <p>
-          Our trainings will make you smarter than a whip, and for only $25.
+          Our trainings will make you smarter than a whip, and for only $25 in
+          advance, $50 at the door.
         </p>
         <ul>
           <li>Drupal 8 Certification Crash Course (Rackspace)</li>
