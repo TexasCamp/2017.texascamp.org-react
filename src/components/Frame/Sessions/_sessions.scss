@@ -24,10 +24,10 @@
   .title,
   .content--body {
     @include text-long;
-    visibility: hidden;
+    display: none;
 
     @include breakpoint($bp-frame-break-up) {
-      visibility: visible;
+      display: block;
     }
   }
 }

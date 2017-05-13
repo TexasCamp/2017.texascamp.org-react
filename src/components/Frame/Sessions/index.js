@@ -10,9 +10,12 @@ function Sessions() {
   return (
     <Page name="sessions" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="A Mighty Fine Lineup" />
-      <Content classes={['content--aside']}>
-        <img src={wanted} alt="submit a session" width="411" />
-      </Content>
+      <a href={scheduleLink}>
+        <Content classes={['content--aside']}>
+          <img src={wanted} alt="submit a session" width="411" />
+          <a className="button--primary" href={scheduleLink}>View Schedule</a>
+        </Content>
+      </a>
       <Content classes={['content--body']}>
         <p>
           We’ve filled our&nbsp;
@@ -25,11 +28,6 @@ function Sessions() {
         <p>
           Texas Camp also offers Training, Sprints, and BOFs (Birds of a Feather
           peer discussions) for those looking for something a little different.
-        </p>
-        <p>
-          <a href={scheduleLink}>
-            View the 2017 Texas Camp schedule.
-          </a>
         </p>
       </Content>
     </Page>
