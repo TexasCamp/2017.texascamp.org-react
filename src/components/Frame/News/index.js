@@ -15,7 +15,7 @@ function News() {
         <NewsletterForm />
       </Content>
       <Content classes={['content--body']}>
-        <a className="twitter-timeline" href="https://twitter.com/DrupalTexasCamp" data-height="500" data-dnt="true" data-link-color="#ebc387">
+        <a className="twitter-timeline" href="https://twitter.com/DrupalTexasCamp" data-height="500" data-dnt="true" data-link-color="#ebc387" data-chrome="transparent">
           Tweets by DrupalTexasCamp
         </a>
       </Content>
