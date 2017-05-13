@@ -1,9 +1,7 @@
 import React from 'react';
-import Button from '../../Button';
 import Page from '../../Page';
 import Content from '../../Content';
 import SponsorGroup from './Components/SponsorGroup';
-import PDF from './texas-camp-sponsor-prospectus.pdf';
 import background from './sponsors-bg.jpg';
 import trailer from './thank-you-trailer.png';
 import rackspaceLogo from './logos/rackspace.png';
@@ -115,10 +113,6 @@ function Sponsors() {
         <div className="trailer-wrapper">
           <img src={trailer} alt="thank you trailer" className="content--trailer" />
           <div className={['content--prospectus']}>
-            <Button
-              link={PDF}
-              text="Download Prospectus"
-            />
           </div>
         </div>
       </Content>
