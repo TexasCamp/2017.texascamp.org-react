@@ -19,11 +19,11 @@ class Venue extends React.Component {
     return (
       <Page name="venue" classes={['two-col', 'light-bg']}>
         <Title level="h2" title="In a pickle" />
-        <a href="https://www.google.com/maps/place/J.J.+Pickle+Research+Campus/@30.3876908,-97.7303761,17z/data=!3m1!4b1!4m5!3m4!1s0x8644cb88e2b39a67:0x1a1553b1ada3aeaf!8m2!3d30.3876908!4d-97.7281874" target="_blank">
+        <a href="https://www.google.com/maps/d/viewer?mid=1CQHcTgSgh1aHpXMjmLJjPZLqbnI" target="_blank">
           <Content classes={['content--aside']}>
             <img src={map} alt="submit a session" width="411" />
             <div className="button--primary">
-              Google Map
+              Explore Austin
             </div>
           </Content>
         </a>
