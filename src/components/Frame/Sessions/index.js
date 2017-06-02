@@ -6,7 +6,7 @@ import background from './sessions-bg.jpg';
 import wanted from './wanted-poster.png';
 
 function Sessions() {
-  const scheduleLink = 'https://docs.google.com/spreadsheets/d/1qb1K8GaPbmaXYMn7mA_M0Cvy9-CqV1MYzf14gL-ZIEs/edit#gid=834480689';
+  const scheduleLink = 'https://joind.in/event/texas-camp/schedule/grid';
   return (
     <Page name="sessions" background={background} classes={['two-col', 'light-bg']}>
       <Title level="h2" title="A Mighty Fine Lineup" />
