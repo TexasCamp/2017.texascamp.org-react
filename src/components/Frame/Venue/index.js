@@ -29,13 +29,12 @@ class Venue extends React.Component {
         </a>
         <Content classes={['content--body']}>
           <p>
-            We’re worked up about our venue this year!
-            We’re headed to the
+            We’re worked up about our venue this year! We’re headed to the
             {" "}
-            <a href="https://goo.gl/maps/qoMNPrMX9CG2" target="_blank">UT JJ Pickle Research Campus</a>
+            <a href="https://goo.gl/maps/ru92s6ftQFS2" target="_blank">Commons Learning Center</a>
             {" "}
-            in North Austin.
-            We reckon you’ll find great places to eat, drink and explore.&nbsp;
+            at the UT JJ Pickle Research Campus in North Austin. We reckon
+            you’ll find great places to eat, drink and explore.&nbsp;
             <Link
               offset={-55}
               isDynamic={Boolean(true)}
