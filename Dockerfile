@@ -9,7 +9,7 @@ COPY package.json yarn.lock /app/
 RUN yarn install --pure-lockfile
 
 FROM amazeeio/centos7-node:node6
-COPY --from=builder node_packages node_packages
+COPY --from=builder node-packages node-packages
 
 # Use production mode for building and running the app (code minification, etc.).
 ENV NODE_ENV production
