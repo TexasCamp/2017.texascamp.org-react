@@ -1,4 +1,6 @@
 services:
   node:
-    type: node:6
-    Dockerfile: Dockerfile
+    amazeeio:
+      type: node:6
+    build:
+      dockerfile: Dockerfile
