@@ -1,0 +1,42 @@
+
+/* TEAM */
+Texas Camp Lead: Stephanie El-Hajj
+Contact: stephanie@amazee.com
+Twitter: stephelhajj
+Location: Austin, TX.
+
+Website Lead: Brandon Williams
+Contact: brandon@amazeelabs.com
+Twitter: rocketeerbkw
+Location: Austin, TX.
+
+Design Lead: Andrew McClintock
+Contact: andrew@amazeelabs.com
+Twitter: bigorangedrink
+Location: Austin, TX.
+
+Web Developer: Maria Comas
+Contact: maria@amazeelabs.com
+Twitter: una_maria
+Location: Austin, TX.
+
+Engineer: Chris Martin
+Contact: chris.martin@fourkitchens.com
+Twitter: ccjjmartin
+Location: Austin, TX.
+
+Marketing: Lucy Weinmeister
+Contact: lucy@fourkitchens.com
+Twitter: stardlc
+Location: Austin, TX.
+
+Marketing: Jeff Cardwell
+Contact: http://www.jeffreycardwell.com/
+Location: Austin, TX.
+
+/* THANKS */
+Name: All of our sponsors
+
+/* SITE */
+Standards: React, es2015
+Components: React, React Router
